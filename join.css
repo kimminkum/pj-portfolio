@@ -26,7 +26,8 @@ article form h4 {
   margin-bottom: 24px;
 }
 
-.join_us form p {
+.join_us form p,
+.join_us .form_box p {
   margin-bottom: 4px;
   margin-top: 8px;
 }
@@ -43,7 +44,8 @@ button:hover {
   margin: 4px 0 4px 12px;
 }
 
-article form > div:nth-of-type(3) {
+article form > div:nth-of-type(3),
+article .form_box > div:nth-of-type(3) {
   font-size: 1.5rem;
   position: relative;
   width: 100%;
@@ -57,7 +59,8 @@ article form > div:nth-of-type(3) i {
   transform: translateY(-70%);
 }
 
-article form > div:nth-of-type(4) {
+article form > div:nth-of-type(4),
+article .form_box > div:nth-of-type(4) {
   width: 100%;
 }
 article form > div:nth-of-type(4) p {
@@ -84,8 +87,23 @@ input[type="checkbox"] {
   margin-right: 4px;
 }
 
-article form hr {
+article form hr,
+article .form_box hr {
   margin: 12px 0;
+}
+
+.form_box > div > button {
+  width: 49%;
+}
+
+.form_box .gray_btn {
+  padding: 0 0.8rem;
+  white-space: nowrap;
+  background: var(--color-indigo) linear-gradient(#111 0 0) left / var(--p, 0%)
+    no-repeat;
+  font-weight: 600;
+  border: none;
+  color: white;
 }
 
 /* 이용약관 */
@@ -142,7 +160,7 @@ article > :nth-child(4) form > :nth-child(4) button {
   width: 49%;
 }
 
-.join_us > :nth-child(4) form > p {
+.join_us > :nth-child(4) .form_box > p {
   text-align: center;
   margin: 40px 0;
 }
