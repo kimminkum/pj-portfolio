@@ -1,0 +1,171 @@
+<!-- 회원가입 화면 -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kmk Final</title>
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="login.css" />
+    <!-- AOS Download-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- fontawsome icons -->
+    <script
+      src="https://kit.fontawesome.com/b95978bb50.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body id="top">
+    <div w3-include-html="header.html"></div>
+
+    <div>
+      <article class="login">
+        <h1>Login</h1>
+        <form class="" action="index.html" method="post">
+          <h4>Porsche 통합 아이디로 로그인 하실 수 있습니다.</h4>
+          <input
+            type="text"
+            name=""
+            value=""
+            placeholder="아이디를 입력해주세요."
+          />
+          <input
+            type="text"
+            name=""
+            value=""
+            placeholder="비밀번호를 입력해주세요."
+          />
+          <div class="flex_sb">
+            <div>
+              <input type="checkbox" id="id_save" name="id_save" />
+              <label for="id_save">아이디 저장</label>
+            </div>
+            <div>
+              <a href="#">아이디 찾기</a>
+              <span style="margin: 0">ㅣ</span>
+              <a href="#">비밀번호 찾기</a>
+            </div>
+          </div>
+          <button onclick="return false;">로그인</button>
+          <button onclick="location.href='join.html' ">회원가입</button>
+
+          <hr />
+
+          <p>간편 로그인</p>
+          <button class="white1_btn" onclick="kakaoLogin()">
+            <img
+              src="https://blog.kakaocdn.net/dn/Sq4OD/btqzlkr13eD/dYwFnscXEA6YIOHckdPDDk/img.jpg"
+              alt="로고"
+            />
+            카카오 로그인
+          </button>
+        </form>
+      </article>
+
+      <article class="help_id">
+        <form action="">
+          <h4>아이디 찾기</h4>
+          <hr />
+          <img src="./image/login_icon_1.png" alt="" />
+          <div class="flex_sb">
+            <div>
+              <p>휴대폰 인증</p>
+              <small class="gray">고객님 명의의 휴대폰으로 인증</small>
+            </div>
+            <div>
+              <button>인증하기</button>
+            </div>
+          </div>
+        </form>
+      </article>
+
+      <article class="help_pw">
+        <form action="">
+          <h4>비밀번호 찾기</h4>
+          <hr />
+          <img src="./image/login_icon_2.png" alt="" />
+          <div class="flex_sb">
+            <label for="">ID :</label> <input type="text" />
+          </div>
+          <button>다음</button>
+        </form>
+      </article>
+      <aside>
+        <div id="top_btn">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </aside>
+    </div>
+
+    <div w3-include-html="footer.html"></div>
+
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+      window.Kakao.init("d0411399f1d75213eaec8091413b6e9c");
+
+      function kakaoLogin() {
+        window.Kakao.Auth.login({
+          scope: "profile_nickname, profile_image", //동의항목 페이지에 있는 개인정보 보호 테이블의 활성화된 ID값을 넣습니다.
+          success: function (response) {
+            console.log(response); // 로그인 성공하면 받아오는 데이터
+            window.Kakao.API.request({
+              // 사용자 정보 가져오기
+              url: "/v2/user/me",
+              success: (res) => {
+                const kakao_account = res.kakao_account;
+                console.log(kakao_account);
+              }
+            });
+            // window.location.href='/ex/kakao_login.html' //리다이렉트 되는 코드
+          },
+          fail: function (error) {
+            console.log(error);
+          }
+        });
+      }
+      function secession() {
+        Kakao.API.request({
+          url: "/v1/user/unlink",
+          success: function (response) {
+            console.log(response);
+            //callback(); //연결끊기(탈퇴)성공시 서버에서 처리할 함수
+            window.location.href = "/";
+          },
+          fail: function (error) {
+            console.log("탈퇴 미완료");
+            console.log(error);
+          }
+        });
+      }
+    </script>
+
+    <script src="basic.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

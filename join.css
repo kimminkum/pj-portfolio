@@ -1,0 +1,151 @@
+article {
+  width: 100%;
+  height: 100%;
+  max-height: auto;
+  z-index: 1;
+  background: white;
+  margin: 40px auto;
+  padding: 40px 24px 80px;
+}
+article > div {
+  width: 100%;
+  max-width: 480px;
+  margin: 60px auto;
+}
+
+.join_us form input {
+  border: 1px solid #aaa;
+}
+
+article > :nth-child(2) > h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+article form h4 {
+  margin-bottom: 24px;
+}
+
+.join_us form p {
+  margin-bottom: 4px;
+  margin-top: 8px;
+}
+button:hover {
+  box-shadow: 2px 2px 12px #aaa;
+}
+
+.same_btn,
+.tel_btn {
+  position: relative;
+  top: -4px;
+  line-height: 28px;
+  width: 50%;
+  margin: 4px 0 4px 12px;
+}
+
+article form > div:nth-of-type(3) {
+  font-size: 1.5rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+article form > div:nth-of-type(3) i {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-70%);
+}
+
+article form > div:nth-of-type(4) {
+  width: 100%;
+}
+article form > div:nth-of-type(4) p {
+  margin-bottom: 20px;
+}
+
+article form > div:nth-of-type(4) > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+article form > div:nth-of-type(4) select {
+  position: relative;
+  width: 30%;
+  height: 30px;
+  line-height: 30px;
+  top: -10px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  top: 1px;
+  margin-right: 4px;
+}
+
+article form hr {
+  margin: 12px 0;
+}
+
+/* 이용약관 */
+
+.agree {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.agree input[type="checkbox"] {
+  margin-bottom: 0;
+}
+
+.agree label span {
+  color: #aaa;
+}
+
+.agree label a {
+  color: #000;
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+.agree > div {
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+.agree > div > div {
+  margin-bottom: 4px;
+}
+
+.agree > hr {
+  margin: 0.2rem 0;
+}
+
+article > :nth-child(3) form > div:nth-of-type(1) {
+  background: #eee;
+  padding: 20px 24px;
+  text-align: left;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+article > :nth-child(3) form > div:nth-of-type(2) {
+  text-align: left;
+  padding: 1.2rem 0;
+}
+
+article h3 {
+  text-align: center;
+}
+
+article > :nth-child(4) form > :nth-child(4) button {
+  width: 49%;
+}
+
+.join_us > :nth-child(4) form > p {
+  text-align: center;
+  margin: 40px 0;
+}
+
+@media screen and (min-width: 1366px) {
+}

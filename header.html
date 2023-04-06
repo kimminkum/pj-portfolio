@@ -1,0 +1,147 @@
+<header>
+  <!-- top header -->
+  <div class="flex_end">
+    <div class="logo">
+      <a href="index.html"><img src="./image/logo_black.jpg" alt="" /></a>
+    </div>
+
+    <div class="flex">
+      <div id="home_con">
+        <a href="index.html"><i class="fa-solid fa-house-chimney"></i></a>
+      </div>
+      <div id="user_con">
+        <a href="login.html"><i class="fa-solid fa-user"></i></a>
+      </div>
+      <div id="search_con">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div id="side_con">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- search -->
+  <div id="search_hash">
+    <div class="flex_end">
+      <div id="search_close" class="close_btn">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </div>
+    </div>
+
+    <div class="search_window">
+      <input
+        type="text"
+        placeholder="검색어를 입력해 주세요"
+        id="tt"
+        onkeyup="enterkey()"
+      />
+      <button type="submit" onclick="appendDiv()">확인</button>
+    </div>
+
+    <div class="keyword">
+      <h4>인기 검색어</h4>
+      <div>
+        <button class="hashtag" onclick="statusChange(this)">#Porsche</button>
+        <button class="hashtag" onclick="statusChange(this)">#스포티지</button>
+        <button class="hashtag" onclick="statusChange(this)">#셀토스</button>
+        <button class="hashtag" onclick="statusChange(this)">#레이</button>
+        <button class="hashtag" onclick="statusChange(this)">#카니발.</button>
+      </div>
+    </div>
+
+    <div class="myword">
+      <h4>최근 검색어</h4>
+      <div class="wordtag"></div>
+    </div>
+
+    <div class="thisbox">
+      <!-- <img src="./image/search_img.jpg" alt="" /> -->
+    </div>
+  </div>
+  <!-- menu -->
+  <nav id="side_bar">
+    <div class="flex_end">
+      <div id="side_close" class="close_btn">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </div>
+    </div>
+
+    <div class="navs" style="display: block">
+      <ul class="accordion">
+        <li>
+          <div class="accodion_btn">
+            <a href="#" onclick="return false;">Home</a>
+          </div>
+          <div class="course-panel">
+            <ul>
+              <a href="index.html"
+                ><li><span>Porsche</span></li></a
+              >
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="accodion_btn">
+            <a href="#" onclick="return false;">PURCHASE</a>
+          </div>
+          <div class="course-panel">
+            <ul>
+              <a href="brand.html"
+                ><li><span>Brand</span></li></a
+              >
+              <a href="product.html"
+                ><li><span>Cars</span></li></a
+              >
+              <a href="store.html"
+                ><li><span>Use Car</span></li></a
+              >
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="accodion_btn">
+            <a href="#" onclick="return false;">LOGIN</a>
+          </div>
+          <div class="course-panel">
+            <ul>
+              <a href="join.html"
+                ><li><span>Join us</span></li></a
+              >
+              <a href="login.html"
+                ><li><span>Login</span></li></a
+              >
+              <a href="remove.html"
+                ><li><span>Remove account</span></li></a
+              >
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="accodion_btn">
+            <a href="#" onclick="return false;">Board</a>
+          </div>
+          <div class="course-panel">
+            <ul>
+              <a href="faq.html"
+                ><li><span>FAQ</span></li></a
+              >
+              <a href="qna.html"
+                ><li><span>QnA</span></li></a
+              >
+              <a href="notice.html"
+                ><li><span>Porsche Notice</span></li></a
+              >
+              <a href="load.html"
+                ><li><span>Find Center</span></li></a
+              >
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div>
+        <!-- <img src="./image/notice_img.jpg" alt="" /> -->
+      </div>
+    </div>
+  </nav>
+</header>

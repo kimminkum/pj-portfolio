@@ -1,0 +1,2264 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kmk Final</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="basic.css" />
+    <!-- AOS Download-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- fontawsome icons -->
+    <script
+      src="https://kit.fontawesome.com/b95978bb50.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body id="top">
+    <div w3-include-html="header.html"></div>
+
+    <!-- swiper -->
+    <main>
+      <div>
+        <!-- Slider main container -->
+        <div class="swiper-container first">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="swipe_img">
+                <img src="./image/main_slide1.webp" alt="" />
+              </div>
+              <div class="swipe_box">
+                <h1>Just like Jenny's dream.</h1>
+                <h3>Jennie Sonderwunsch Auction.</h3>
+                <div>
+                  <button class="white_btn" onclick="stopping()">
+                    자세히 보기</button
+                  ><button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swipe_img">
+                <img src="./image/main_slide2.webp" alt="" />
+              </div>
+              <div class="swipe_box">
+                <h1>More of what you love.</h1>
+                <h3>The 718 GTS 4.0 models.</h3>
+                <div>
+                  <button class="white_btn" onclick="stopping()">
+                    자세히 보기</button
+                  ><button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swipe_img">
+                <img src="./image/main_slide3.webp" alt="" />
+              </div>
+              <div class="swipe_box">
+                <h1>Contemporary, dynamic and urban.</h1>
+                <h3>The Macan S.</h3>
+                <div>
+                  <button class="white_btn" onclick="stopping()">
+                    자세히 보기</button
+                  ><button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swipe_img">
+                <img src="./image/main_slide4.webp" alt="" />
+              </div>
+              <div class="swipe_box">
+                <h1>Soul, electrified.</h1>
+                <h3>Taycan Turbo</h3>
+                <div>
+                  <button class="white_btn" onclick="stopping()">
+                    자세히 보기</button
+                  ><button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swipe_img">
+                <img src="./image/main_slide5.webp" alt="" />
+              </div>
+              <div class="swipe_box">
+                <h1>Sportscar Together.</h1>
+                <h3>The cayenne E-Hybird.</h3>
+                <div>
+                  <button class="white_btn" onclick="stopping()">
+                    자세히 보기</button
+                  ><button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </main>
+
+    <div>
+      <article class="best">
+        <h1>Best Porsche</h1>
+        <div class="flex_center">
+          <div class="bestTab checked">
+            <h5>718</h5>
+          </div>
+          <div class="bestTab">
+            <h5>911</h5>
+          </div>
+          <div class="bestTab">
+            <h5>Panamera</h5>
+          </div>
+          <div class="bestTab">
+            <h5>Cayenne</h5>
+          </div>
+        </div>
+
+        <div class="swiper-container second" id="second">
+          <div class="swiper-wrapper">
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">718</p>
+                  <span class="rank">Top 1</span>
+                </div>
+                <p class="subt">718 Cayman</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_718_1.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">4</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">91.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">76.4 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">1,988 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>RPM point maximum power</p>
+                  <div>
+                    <p class="gray">6,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>91,600,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">718</p>
+                  <span class="rank">Top 2</span>
+                </div>
+                <p class="subt">718 Boxster</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_718_2.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">4</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">91.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">76.4 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">1,988 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>RPM point maximum power</p>
+                  <div>
+                    <p class="gray">6,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>96,300,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">718</p>
+                  <span class="rank">Top 3</span>
+                </div>
+                <p class="subt">718 | 718 Cayman S</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_718_3.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">4</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">102.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">76.4 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,497 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>RPM point maximum power</p>
+                  <div>
+                    <p class="gray">7,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>103,500,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">718</p>
+                  <span class="rank">Top 4</span>
+                </div>
+                <p class="subt">718 | 718 Boxter S</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_718_4.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">4</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">102.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">76.4 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,497 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>RPM point maximum power</p>
+                  <div>
+                    <p class="gray">6,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>108,200,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">718</p>
+                  <span class="rank">Top 5</span>
+                </div>
+                <p class="subt">718 | 718 Cayman GTS 4.0</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_718_5.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">102.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">81.5 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">3,995 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>RPM point maximum power</p>
+                  <div>
+                    <p class="gray">6,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>123,400,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper-container three" id="three">
+          <div class="swiper-wrapper">
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">911</p>
+                  <span class="rank">Top 1</span>
+                </div>
+                <p class="subt">911 | 911 Carrera</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_911_1.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">91.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">76.4 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,981 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>RPM point maximum power</p>
+                  <div>
+                    <p class="gray">6,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>158,700,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">911</p>
+                  <span class="rank">Top 2</span>
+                </div>
+                <p class="subt">911 | 911 Carrera Cabriolet</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_911_2.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">91.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">76.4 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,981 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>RPM point maximum power</p>
+                  <div>
+                    <p class="gray">6,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>174,600,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">911</p>
+                  <span class="rank">Top 3</span>
+                </div>
+                <p class="subt">911 | 911 Carrera 4</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_911_3.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">91.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">76.4 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,981 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>RPM point maximum power</p>
+                  <div>
+                    <p class="gray">6,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>167,900,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">911</p>
+                  <span class="rank">Top 4</span>
+                </div>
+                <p class="subt">911 | 911 Carrera 4 Cabriolet</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_911_4.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">91.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">76.4 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,981 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>RPM point maximum power</p>
+                  <div>
+                    <p class="gray">6,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>183,800,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">911</p>
+                  <span class="rank">Top 5</span>
+                </div>
+                <p class="subt">911 | 911 Carrera S</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_911_5.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">91.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">76.4 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,981 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>RPM point maximum power</p>
+                  <div>
+                    <p class="gray">6,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>183,800,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper-container four" id="four">
+          <div class="swiper-wrapper">
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">Panamera</p>
+                  <span class="rank">Top 1</span>
+                </div>
+                <p class="subt">Panamera | Panamera 4</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_par_1.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">84.5 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">86.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,894 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Maximum engine speed</p>
+                  <div>
+                    <p class="gray">6,800 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>150,300,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">Panamera</p>
+                  <span class="rank">Top 2</span>
+                </div>
+                <p class="subt">Panamera | Panamera 4 Platinum Edition</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_par_2.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">84.5 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">86.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,894 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Maximum engine speed</p>
+                  <div>
+                    <p class="gray">6,800 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>166,800,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">Panamera</p>
+                  <span class="rank">Top 3</span>
+                </div>
+                <p class="subt">Panamera | Panamera 4 Executive</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_par_3.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">84.5 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">86.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,894 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Maximum engine speed</p>
+                  <div>
+                    <p class="gray">6,800 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>158,800,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">Panamera</p>
+                  <span class="rank">Top 4</span>
+                </div>
+                <p class="subt">Panamera | Panamera 4 E-Hybrid</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_par_4.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">84.5 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">86.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,894 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Maximum engine speed</p>
+                  <div>
+                    <p class="gray">6,800 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>173,600,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">Panamera</p>
+                  <span class="rank">Top 5</span>
+                </div>
+                <p class="subt">Panamera | Panamera 4 E-Hybrid Platinum</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_par_5.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">84.5 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">86.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,894 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Maximum engine speed</p>
+                  <div>
+                    <p class="gray">6,800 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>186,800,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper-container five" id="five">
+          <div class="swiper-wrapper">
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">Cayenne</p>
+                  <span class="rank">Top 1</span>
+                </div>
+                <p class="subt">Cayenne | Cayenne</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_cay_1.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">84.5 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">86.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,995 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Maximum engine speed</p>
+                  <div>
+                    <p class="gray">6,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>117,200,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">Cayenne</p>
+                  <span class="rank">Top 2</span>
+                </div>
+                <p class="subt">Cayenne | Cayenne Platinum Edition</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_cay_2.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">84.5 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">86.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,995 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Maximum engine speed</p>
+                  <div>
+                    <p class="gray">6,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>139,700,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">Cayenne</p>
+                  <span class="rank">Top 3</span>
+                </div>
+                <p class="subt">Cayenne | Cayenne Coupe</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_cay_3.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">84.5 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">86.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,995 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Maximum engine speed</p>
+                  <div>
+                    <p class="gray">6,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>126,200,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">Cayenne</p>
+                  <span class="rank">Top 4</span>
+                </div>
+                <p class="subt">Cayenne | Cayenne Coupe Playinum Edition</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_cay_4.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">84.5 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">86.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,995 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Maximum engine speed</p>
+                  <div>
+                    <p class="gray">6,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>142,100,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="swiper-slide">
+              <div>
+                <div class="rankbox">
+                  <p class="title">Cayenne</p>
+                  <span class="rank">Top 5</span>
+                </div>
+                <p class="subt">Cayenne | Cayenne E-Hybird</p>
+              </div>
+
+              <div class="best_img">
+                <img src="./image/best_cay_5.webp" alt="" />
+              </div>
+
+              <div class="proper">
+                <div class="flex_sb">
+                  <p>Number of cylinders</p>
+                  <p class="gray">6</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Bore</p>
+                  <p class="gray">84.5 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Stroke</p>
+                  <p class="gray">86.0 mm</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Displacement</p>
+                  <p class="gray">2,995 cc</p>
+                </div>
+                <div class="flex_sb">
+                  <p>Maximum engine speed</p>
+                  <div>
+                    <p class="gray">6,500 r/min</p>
+                  </div>
+                </div>
+
+                <div class="flex_end">
+                  <h4>127,600,000 KRW</h4>
+                </div>
+
+                <div class="flex_sb">
+                  <button class="white1_btn" onclick="stopping()">
+                    자세히 보기
+                  </button>
+                  <button
+                    class="black_btn"
+                    onclick="location.href='product.html' "
+                  >
+                    견적내기
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </article>
+
+      <article class="model">
+        <h1>Models</h1>
+        <div>
+          <section>
+            <div class="mod_img">
+              <img src="./image/model_grid1.webp" alt="" />
+            </div>
+
+            <div class="mod_box">
+              <div class="mobile">
+                <p>718</p>
+                <span class="nums2" data-count="91600000">0</span
+                ><span id="num-unit">KRW 부터</span><br />
+              </div>
+
+              <div class="pc">
+                <h3>718</h3>
+                <span class="nums" data-count="91600000">0</span
+                ><span id="num-unit">KRW 부터</span><br />
+                <button class="white_btn" onclick="stopping()">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> 나만의
+                  포르쉐 만들기
+                </button>
+                <button class="revers_btn" onclick="stopping()">
+                  <i class="fa-solid fa-chevron-right"></i> 모든 모델
+                </button>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="mod_img">
+              <img src="./image/model_grid2.webp" alt="" />
+            </div>
+
+            <div class="mod_box">
+              <div class="mobile">
+                <p>911</p>
+                <span class="nums2" data-count="158700000">0</span
+                ><span id="num-unit">KRW 부터</span><br />
+              </div>
+
+              <div class="pc">
+                <h3>911</h3>
+                <span class="nums" data-count="158700000">0</span
+                ><span id="num-unit">KRW 부터</span><br />
+                <button class="white_btn" onclick="stopping()">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> 나만의
+                  포르쉐 만들기
+                </button>
+                <button class="revers_btn" onclick="stopping()">
+                  <i class="fa-solid fa-chevron-right"></i> 모든 모델
+                </button>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="mod_img">
+              <img src="./image/model_grid3.webp" alt="" />
+            </div>
+
+            <div class="mod_box">
+              <div class="mobile">
+                <p>Taycan</p>
+                <span class="nums2" data-count="123800000">0</span
+                ><span id="num-unit">KRW 부터</span><br />
+              </div>
+
+              <div class="pc">
+                <h3>Taycan</h3>
+                <span class="nums" data-count="123800000">0</span
+                ><span id="num-unit">KRW 부터</span><br />
+                <button class="white_btn" onclick="stopping()">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> 나만의
+                  포르쉐 만들기
+                </button>
+                <button class="revers_btn" onclick="stopping()">
+                  <i class="fa-solid fa-chevron-right"></i> 모든 모델
+                </button>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="mod_img">
+              <img src="./image/model_grid4.webp" alt="" />
+            </div>
+
+            <div class="mod_box">
+              <div class="mobile">
+                <p>Panamera</p>
+                <span class="nums2" data-count="15030000 ">0</span
+                ><span id="num-unit">KRW 부터</span><br />
+              </div>
+
+              <div class="pc">
+                <h3>Panamera</h3>
+                <span class="nums" data-count="15030000 ">0</span
+                ><span id="num-unit">KRW 부터</span><br />
+                <button class="white_btn" onclick="stopping()">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> 나만의
+                  포르쉐 만들기
+                </button>
+                <button class="revers_btn" onclick="stopping()">
+                  <i class="fa-solid fa-chevron-right"></i> 모든 모델
+                </button>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="mod_img">
+              <img src="./image/model_grid5.webp" alt="" />
+            </div>
+
+            <div class="mod_box">
+              <div class="mobile">
+                <p>Macan</p>
+                <span class="nums2" data-count="10300000 ">0</span
+                ><span id="num-unit">KRW 부터</span><br />
+              </div>
+
+              <div class="pc">
+                <h3>Macan</h3>
+                <span class="nums" data-count="10300000 ">0</span
+                ><span id="num-unit">KRW 부터</span><br />
+                <button class="white_btn" onclick="stopping()">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  나만의 포르쉐 만들기
+                </button>
+                <button class="revers_btn" onclick="stopping()">
+                  <i class="fa-solid fa-chevron-right"></i> 모든 모델
+                </button>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="mod_img">
+              <img src="./image/model_grid6.webp" alt="" />
+            </div>
+
+            <div class="mod_box">
+              <div class="mobile">
+                <p>Cayenne</p>
+                <span class="nums2" data-count="117200000">0</span
+                ><span id="num-unit">KRW 부터</span><br />
+              </div>
+
+              <div class="pc">
+                <h3>Cayenne</h3>
+                <span class="nums" data-count="117200000">0</span
+                ><span id="num-unit">KRW 부터</span><br />
+                <button class="white_btn" onclick="stopping()">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> 나만의
+                  포르쉐 만들기
+                </button>
+                <button class="revers_btn" onclick="stopping()">
+                  <i class="fa-solid fa-chevron-right"></i> 모든 모델
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <article class="used">
+        <h1>중고 거래</h1>
+        <div class="swiper-container center">
+          <div class="swiper-wrapper slide_list">
+            <section class="swiper-slide card">
+              <div>
+                <div class="top-section">
+                  <img
+                    src="./image/used_911_1.avif"
+                    alt=""
+                    id="image-container"
+                  />
+                </div>
+
+                <div class="used_selec">
+                  <img
+                    src="./image/used_911_1.avif"
+                    alt=""
+                    onclick="change_img(this)"
+                  />
+                  <img
+                    src="./image/used_911_2.avif"
+                    alt=""
+                    onclick="change_img(this)"
+                  />
+                  <img
+                    src="./image/used_911_3.avif"
+                    alt=""
+                    onclick="change_img(this)"
+                  />
+                  <img
+                    src="./image/used_911_4.avif"
+                    alt=""
+                    onclick="change_img(this)"
+                  />
+                </div>
+              </div>
+              <div class="used_box">
+                <h5>2021 Porsche 911 Carrera 4 Cabriolet</h5>
+                <div class="gray">
+                  <p>화이트 · Leather (two-tone), Black and Mojave Beige</p>
+                  <p class="pc">10,500km 12월/2020년 이전 소유자 0명</p>
+                  <p class="pc">PDK(자동) 288kW 392마력 무사고</p>
+                  <p class="pc">₩204,000,000</p>
+                  <p class="pc gray">휘발유</p>
+                </div>
+                <button class="black_btn" onclick="location.href='store.html' ">
+                  보러가기
+                </button>
+              </div>
+            </section>
+
+            <section class="swiper-slide card">
+              <div>
+                <div class="top-section">
+                  <img src="./image/used_718_1.avif" alt="" id="image_con" />
+                </div>
+
+                <div class="used_selec">
+                  <img
+                    src="./image/used_718_1.avif"
+                    alt=""
+                    onclick="change_img1(this)"
+                  />
+                  <img
+                    src="./image/used_718_2.avif"
+                    alt=""
+                    onclick="change_img1(this)"
+                  />
+                  <img
+                    src="./image/used_718_3.avif"
+                    alt=""
+                    onclick="change_img1(this)"
+                  />
+                  <img
+                    src="./image/used_718_4.avif"
+                    alt=""
+                    onclick="change_img1(this)"
+                  />
+                </div>
+              </div>
+              <div class="used_box">
+                <h5>2020 포르쉐 718 Boxster GTS</h5>
+                <div class="gray">
+                  <p>
+                    Carmine Red · Two-tone leather interior package in two-tone
+                    combination Black - Bordeaux Red
+                  </p>
+                  <p class="pc">8,700km 12월/2019년 이전 소유자 0명</p>
+                  <p class="pc">PDK(자동) 269 kW / 365 마력 무사고</p>
+                  <p class="pc">₩125,000,000</p>
+                  <p class="pc gray">휘발유</p>
+                </div>
+                <button class="black_btn" onclick="location.href='store.html' ">
+                  보러가기
+                </button>
+              </div>
+            </section>
+
+            <section class="swiper-slide card">
+              <div>
+                <div class="top-section">
+                  <img src="./image/used_tay_1.avif" alt="" id="image_con2" />
+                </div>
+
+                <div class="used_selec">
+                  <img
+                    src="./image/used_tay_1.avif"
+                    alt=""
+                    onclick="change_img2(this)"
+                  />
+                  <img
+                    src="./image/used_tay_2.avif"
+                    alt=""
+                    onclick="change_img2(this)"
+                  />
+                  <img
+                    src="./image/used_tay_3.avif"
+                    alt=""
+                    onclick="change_img2(this)"
+                  />
+                  <img
+                    src="./image/used_tay_4.avif"
+                    alt=""
+                    onclick="change_img2(this)"
+                  />
+                </div>
+              </div>
+              <div class="used_box">
+                <h5>2021 포르쉐 Taycan Turbo S</h5>
+                <div class="gray">
+                  <p>
+                    Ice Grey Metallic · Two-Tone Leather Interior, Smooth-Finish
+                    Leather, Black/Crayon
+                  </p>
+                  <p class="pc">8,809km 11월/2021년 이전 소유자 1명</p>
+                  <p class="pc">RND(자동) 560 kW / 761 마력 무사고</p>
+                  <p class="pc">₩220,000,000</p>
+                  <p class="pc gray">전기엔진</p>
+                </div>
+                <button class="black_btn" onclick="location.href='store.html' ">
+                  보러가기
+                </button>
+              </div>
+            </section>
+
+            <section class="swiper-slide card">
+              <div>
+                <div class="top-section">
+                  <img src="./image/used_2021_1.avif" alt="" id="image_con3" />
+                </div>
+
+                <div class="used_selec">
+                  <img
+                    src="./image/used_2021_1.avif"
+                    alt=""
+                    onclick="change_img3(this)"
+                  />
+                  <img
+                    src="./image/used_2021_2.avif"
+                    alt=""
+                    onclick="change_img3(this)"
+                  />
+                  <img
+                    src="./image/used_2021_3.avif"
+                    alt=""
+                    onclick="change_img3(this)"
+                  />
+                  <img
+                    src="./image/used_2021_4.avif"
+                    alt=""
+                    onclick="change_img3(this)"
+                  />
+                </div>
+              </div>
+              <div class="used_box">
+                <h5>2021 포르쉐 911 Carrera 4S Cabriolet</h5>
+                <div class="gray">
+                  <p>
+                    GT Silver Metallic · Leather (two-tone), Black and Bordeaux
+                    Red
+                  </p>
+                  <p class="pc">6,200km 04월/2021년 이전 소유자 1명</p>
+                  <p class="pc">RND(자동) 337 kW / 458 마력 무사고</p>
+                  <p class="pc">₩215,000,000</p>
+                  <p class="pc gray">휘발유</p>
+                </div>
+                <button class="black_btn" onclick="location.href='store.html' ">
+                  보러가기
+                </button>
+              </div>
+            </section>
+
+            <section class="swiper-slide card" aria-label="5/5">
+              <div>
+                <div class="top-section">
+                  <img src="./image/used_2020_1.avif" alt="" id="image_con4" />
+                </div>
+
+                <div class="used_selec">
+                  <img
+                    src="./image/used_2020_1.avif"
+                    alt=""
+                    onclick="change_img4(this)"
+                  />
+                  <img
+                    src="./image/used_2020_2.avif"
+                    alt=""
+                    onclick="change_img4(this)"
+                  />
+                  <img
+                    src="./image/used_2020_3.avif"
+                    alt=""
+                    onclick="change_img4(this)"
+                  />
+                  <img
+                    src="./image/used_2020_4.avif"
+                    alt=""
+                    onclick="change_img4(this)"
+                  />
+                </div>
+              </div>
+              <div class="used_box">
+                <h5>2020 포르쉐 718 Boxster GTS</h5>
+                <div class="gray">
+                  <p>
+                    Racing Yellow · Leather interior in special colour Bordeaux
+                    Red
+                  </p>
+                  <p class="pc">10,938km 12월/2019년 이전 소유자 1명</p>
+                  <p class="pc">RND(자동) 269 kW / 365 마력 무사고</p>
+                  <p class="pc">₩115,000,000</p>
+                  <p class="pc gray">휘발유</p>
+                </div>
+                <button class="black_btn" onclick="location.href='store.html' ">
+                  보러가기
+                </button>
+              </div>
+            </section>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </article>
+
+      <article class="event">
+        <h1>혜택</h1>
+        <div class="flex_center">
+          <div class="eTab checked">
+            <h5>718</h5>
+          </div>
+          <div class="eTab">
+            <h5>911</h5>
+          </div>
+          <div class="eTab">
+            <h5>Panamera</h5>
+          </div>
+          <div class="eTab">
+            <h5>Cayenne</h5>
+          </div>
+        </div>
+
+        <div class="flex_sb" id="cani">
+          <section class="leftSection">
+            <form action="">
+              <div>
+                <h4>할부 계산기</h4>
+                <p>718</p>
+              </div>
+
+              <h5>선수금</h5>
+              <div class="range_box flex_sb">
+                <div class="range_money">
+                  <input
+                    class="rangeMoney"
+                    type="range"
+                    name="money"
+                    id="money"
+                    min="32"
+                    max="8600"
+                    value="8600"
+                    step="1"
+                  />
+                  <span class="gray">32만원</span>
+                  <span class="gray">8,600만원</span>
+                </div>
+
+                <div class="range_read">
+                  <input class="rangeRead" type="text" value="8,600" readonly />
+                  만원
+                </div>
+              </div>
+
+              <h5>할부기간</h5>
+              <div class="range_box flex_sb">
+                <div class="range_month">
+                  <input
+                    class="rangeMonth"
+                    type="range"
+                    min="0"
+                    max="5"
+                    step="1"
+                    value="5"
+                  />
+                  <span class="gray">3개월</span>
+                  <span class="gray">60개월</span>
+                </div>
+
+                <div class="range_seb">
+                  <input class="rangeSeb" type="text" value="60" readonly />
+                  개월
+                </div>
+              </div>
+
+              <h5 style="margin-top: 24px">할부 상품</h5>
+              <div class="flex_sb">
+                <div class="selec">
+                  <div class="choice">
+                    <span class="chaTxt" id="tex1">M할부 일반형</span
+                    ><i class="fa-solid fa-chevron-down"></i>
+                  </div>
+
+                  <div class="options">
+                    <div id="ko1">M할부 일반형</div>
+                    <div id="en1">커스텀 할부</div>
+                    <div id="jn1">M할부 자유형</div>
+                  </div>
+                </div>
+
+                <div class="selec">
+                  <div class="choice">
+                    <span class="chaTxt" id="mon1">60개월</span
+                    ><i class="fa-solid fa-chevron-down"></i>
+                  </div>
+
+                  <div class="options">
+                    <div id="k12">12개월</div>
+                    <div id="k24">24개월</div>
+                    <div id="k36">36개월</div>
+                    <div id="k48">48개월</div>
+                    <div id="k60">60개월</div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="rightSection">
+            <form action="">
+              <div class="modelArea">
+                <div class="model-titleBox">
+                  <h3>718 Cayman</h3>
+                </div>
+                <div class="imgBox">
+                  <img src="./image/index_right_1.webp" alt="" />
+                </div>
+                <div class="textBox">
+                  <div class="model-text1">
+                    <span>출력</span>
+                    <span>221kW / 300 PS</span>
+                  </div>
+                  <div class="model-text2">
+                    <span>제로백</span>
+                    <span>4.9 s</span>
+                  </div>
+                  <div class="model-text3">
+                    <span>최대시속</span>
+                    <span>293 km / h</span>
+                  </div>
+                  <div class="price">
+                    <p><span>91,600,000</span> KRW 부터</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <input type="file" id="file" name="file" style="display: none" />
+        <div class="flex_sb" id="ssona">
+          <section class="leftSection">
+            <form action="">
+              <div>
+                <h4>할부 계산기</h4>
+                <p>911</p>
+              </div>
+
+              <h5>선수금</h5>
+              <div class="range_box flex_sb">
+                <div class="range_money">
+                  <input
+                    class="rangeMoney1"
+                    type="range"
+                    name="money"
+                    id="money"
+                    min="32"
+                    max="16650"
+                    value="16650"
+                    step="1"
+                  />
+                  <span class="gray">32만원</span>
+                  <span class="gray">16,650만원</span>
+                </div>
+
+                <div class="range_read">
+                  <input
+                    class="rangeRead1"
+                    type="text"
+                    value="16,650"
+                    readonly
+                  />
+                  만원
+                </div>
+              </div>
+
+              <h5>할부기간</h5>
+              <div class="range_box flex_sb">
+                <div class="range_month">
+                  <input
+                    class="rangeMonth1"
+                    type="range"
+                    min="0"
+                    max="5"
+                    step="1"
+                    value="5"
+                  />
+                  <span class="gray">3개월</span>
+                  <span class="gray">60개월</span>
+                </div>
+
+                <div class="range_seb">
+                  <input class="rangeSeb1" type="text" value="60" readonly />
+                  개월
+                </div>
+              </div>
+
+              <h5 style="margin-top: 24px">할부 상품</h5>
+              <div class="flex_sb">
+                <div class="selec">
+                  <div class="choice">
+                    <span class="chaTxt" id="tex2">M할부 일반형</span
+                    ><i class="fa-solid fa-chevron-down"></i>
+                  </div>
+
+                  <div class="options">
+                    <div id="ko2">M할부 일반형</div>
+                    <div id="en2">커스텀 할부</div>
+                    <div id="jn2">M할부 자유형</div>
+                  </div>
+                </div>
+
+                <div class="selec">
+                  <div class="choice">
+                    <span class="chaTxt" id="mon2">60개월</span
+                    ><i class="fa-solid fa-chevron-down"></i>
+                  </div>
+
+                  <div class="options">
+                    <div id="i12">12개월</div>
+                    <div id="i24">24개월</div>
+                    <div id="i36">36개월</div>
+                    <div id="i48">48개월</div>
+                    <div id="i60">60개월</div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="rightSection">
+            <form action="">
+              <div class="modelArea">
+                <div class="model-titleBox">
+                  <h3>911</h3>
+                </div>
+                <div class="imgBox">
+                  <img src="./image/index_right_2.webp" alt="" />
+                </div>
+                <div class="textBox">
+                  <div class="model-text1">
+                    <span>출력</span>
+                    <span>221kW / 300 PS</span>
+                  </div>
+                  <div class="model-text2">
+                    <span>제로백</span>
+                    <span>4.4 s</span>
+                  </div>
+                  <div class="model-text3">
+                    <span>최대시속</span>
+                    <span>291 km / h</span>
+                  </div>
+                  <div class="price">
+                    <p><span>174,600,000</span> KRW 부터</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <div class="flex_sb" id="spo">
+          <section class="leftSection">
+            <form action="">
+              <div>
+                <h4>할부 계산기</h4>
+                <p>Panamera</p>
+              </div>
+
+              <h5>선수금</h5>
+              <div class="range_box flex_sb">
+                <div class="range_money">
+                  <input
+                    class="rangeMoney2"
+                    type="range"
+                    name="money"
+                    id="money"
+                    min="32"
+                    max="13500"
+                    value="13500"
+                    step="1"
+                  />
+                  <span class="gray">32만원</span>
+                  <span class="gray">13,500만원</span>
+                </div>
+
+                <div class="range_read">
+                  <input
+                    class="rangeRead2"
+                    type="text"
+                    value="13,500"
+                    readonly
+                  />
+                  만원
+                </div>
+              </div>
+
+              <h5>할부기간</h5>
+              <div class="range_box flex_sb">
+                <div class="range_month">
+                  <input
+                    class="rangeMonth2"
+                    type="range"
+                    min="0"
+                    max="5"
+                    step="1"
+                    value="5"
+                  />
+                  <span class="gray">3개월</span>
+                  <span class="gray">60개월</span>
+                </div>
+
+                <div class="range_seb">
+                  <input class="rangeSeb2" type="text" value="60" readonly />
+                  개월
+                </div>
+              </div>
+
+              <h5 style="margin-top: 24px">할부 상품</h5>
+              <div class="flex_sb">
+                <div class="selec">
+                  <div class="choice">
+                    <span class="chaTxt" id="tex3">M할부 일반형</span
+                    ><i class="fa-solid fa-chevron-down"></i>
+                  </div>
+
+                  <div class="options">
+                    <div id="ko3">M할부 일반형</div>
+                    <div id="en3">커스텀 할부</div>
+                    <div id="jn3">M할부 자유형</div>
+                  </div>
+                </div>
+
+                <div class="selec">
+                  <div class="choice">
+                    <span class="chaTxt" id="mon3">60개월</span
+                    ><i class="fa-solid fa-chevron-down"></i>
+                  </div>
+
+                  <div class="options">
+                    <div id="j12">12개월</div>
+                    <div id="j24">24개월</div>
+                    <div id="j36">36개월</div>
+                    <div id="j48">48개월</div>
+                    <div id="j60">60개월</div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="rightSection">
+            <form action="">
+              <div class="modelArea">
+                <div class="model-titleBox">
+                  <h3>Panamera</h3>
+                </div>
+                <div class="imgBox">
+                  <img src="./image/index_right_3.webp" alt="" />
+                </div>
+                <div class="textBox">
+                  <div class="model-text1">
+                    <span>출력</span>
+                    <span>390kW / 530 PS</span>
+                  </div>
+                  <div class="model-text2">
+                    <span>제로백</span>
+                    <span>4.0 s</span>
+                  </div>
+                  <div class="model-text3">
+                    <span>최대시속</span>
+                    <span>250 km / h</span>
+                  </div>
+                  <div class="price">
+                    <p><span>148,000,000</span> KRW 부터</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <div class="flex_sb" id="moha">
+          <section class="leftSection">
+            <form action="">
+              <div>
+                <h4>할부 계산기</h4>
+                <p>Cayenne</p>
+              </div>
+
+              <h5>선수금</h5>
+              <div class="range_box flex_sb">
+                <div class="range_money">
+                  <input
+                    class="rangeMoney3"
+                    type="range"
+                    name="money"
+                    id="money"
+                    min="32"
+                    max="10800"
+                    value="10800"
+                    step="1"
+                  />
+                  <span class="gray">32만원</span>
+                  <span class="gray">10,800만원</span>
+                </div>
+
+                <div class="range_read">
+                  <input
+                    class="rangeRead3"
+                    type="text"
+                    value="10,800"
+                    readonly
+                  />
+                  만원
+                </div>
+              </div>
+
+              <h5>할부기간</h5>
+              <div class="range_box flex_sb">
+                <div class="range_month">
+                  <input
+                    class="rangeMonth3"
+                    type="range"
+                    min="0"
+                    max="5"
+                    step="1"
+                    value="5"
+                  />
+                  <span class="gray">3개월</span>
+                  <span class="gray">60개월</span>
+                </div>
+
+                <div class="range_seb">
+                  <input class="rangeSeb3" type="text" value="60" readonly />
+                  개월
+                </div>
+              </div>
+
+              <h5 style="margin-top: 24px">할부 상품</h5>
+              <div class="flex_sb">
+                <div class="selec">
+                  <div class="choice">
+                    <span class="chaTxt" id="tex4">M할부 일반형</span
+                    ><i class="fa-solid fa-chevron-down"></i>
+                  </div>
+
+                  <div class="options">
+                    <div id="ko4">M할부 일반형</div>
+                    <div id="en4">커스텀 할부</div>
+                    <div id="jn4">M할부 자유형</div>
+                  </div>
+                </div>
+
+                <div class="selec">
+                  <div class="choice">
+                    <span class="chaTxt" id="mon4">60개월</span
+                    ><i class="fa-solid fa-chevron-down"></i>
+                  </div>
+
+                  <div class="options">
+                    <div id="l12">12개월</div>
+                    <div id="l24">24개월</div>
+                    <div id="l36">36개월</div>
+                    <div id="l48">48개월</div>
+                    <div id="l60">60개월</div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <section class="rightSection">
+            <form action="">
+              <div class="modelArea">
+                <div class="model-titleBox">
+                  <h3>Cayenne</h3>
+                </div>
+                <div class="imgBox">
+                  <img src="./image/index_right_3.webp" alt="" />
+                </div>
+                <div class="textBox">
+                  <div class="model-text1">
+                    <span>출력</span>
+                    <span>255kW / 347 PS</span>
+                  </div>
+                  <div class="model-text2">
+                    <span>제로백</span>
+                    <span>6.0 s</span>
+                  </div>
+                  <div class="model-text3">
+                    <span>최대시속</span>
+                    <span>243 km / h</span>
+                  </div>
+                  <div class="price">
+                    <p><span>126,000,000</span> KRW 부터</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </article>
+
+      <article class="tools">
+        <h1>Tools</h1>
+        <div>
+          <div onclick="stopping()">
+            <div class="tool_img">
+              <img src="./image/tool_1.webp" alt="" />
+            </div>
+
+            <div class="tool_box">
+              <h5>Porsche More</h5>
+            </div>
+          </div>
+          <div onclick="stopping()">
+            <div class="tool_img">
+              <img src="./image/tool_2.webp" alt="" />
+            </div>
+
+            <div class="tool_box">
+              <h5>
+                Porsche Center<br />
+                Find
+              </h5>
+            </div>
+          </div>
+          <div onclick="stopping()">
+            <div class="tool_img">
+              <img src="./image/tool_3.webp" alt="" />
+            </div>
+
+            <div class="tool_box">Porsche Services</div>
+          </div>
+          <div onclick="stopping()">
+            <div class="tool_img">
+              <img src="./image/tool_4.webp" alt="" />
+            </div>
+
+            <div class="tool_box">
+              <h5>
+                Porsche Exclusive <br />
+                Tour
+              </h5>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="news">
+        <div>
+          <div class="news_img">
+            <img src="./image/news_img.jpg" alt="" />
+          </div>
+
+          <div class="news_box">
+            <h3>Porsche News E-Performance Model.</h3>
+            <p>
+              Now with pure electric drive technology or plug-in hybrid
+              technology Take a look at the model and find the perfect Porsche
+              for you.
+            </p>
+            <button class="revers_btn" onclick="stopping()">
+              <i class="fa-solid fa-chevron-right"></i> Explore the Model
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <aside>
+        <div id="top_btn">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </aside>
+    </div>
+
+    <div w3-include-html="footer.html"></div>
+
+    <script src="script.js"></script>
+    <script src="basic.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

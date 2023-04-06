@@ -1,0 +1,827 @@
+<!-- 회원가입 화면 -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kmk Final</title>
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="store.css" />
+    <!-- AOS Download-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- fontawsome icons -->
+    <script
+      src="https://kit.fontawesome.com/b95978bb50.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body id="top">
+    <div w3-include-html="header.html"></div>
+
+    <div>
+      <div class="nav_side_menu">
+        <div>
+          <div class="close_btn" id="nav_side_close">
+            <i class="fa-solid fa-square-xmark"></i>
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            <div class="accodion_btn flex_sb">
+              <span>차량 유형</span>
+            </div>
+            <div class="course-panel">
+              <div>
+                <label for=""><input type="checkbox" />신규 (0)</label>
+                <label for=""><input type="checkbox" />중고 (127)</label>
+                <label for=""
+                  ><input type="checkbox" />Porsche Approved (0)</label
+                >
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="accodion_btn flex_sb">
+              <span>모델</span>
+            </div>
+            <div class="course-panel">
+              <div>
+                <select name="" id="">
+                  <option value="" disabled selected>모든 모델</option>
+                  <option value="">718</option>
+                  <option value="">911</option>
+                  <option value="">Taycan</option>
+                  <option value="">918</option>
+                  <option value="">Macan</option>
+                  <option value="">959</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="accodion_btn flex_sb">
+              <span>모델 버전</span>
+            </div>
+            <div class="course-panel">
+              <div>
+                <p class="gray">
+                  911 Carrera S와 같은 모델 변형을 필터링할 수 있도록 먼저
+                  모델을 선택하십시오.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="accodion_btn flex_sb">
+              <span>세대</span>
+            </div>
+            <div class="course-panel">
+              <div>
+                <p class="gray">
+                  모델을 먼저 선택하여 992와 같은 모델 생성을 필터링할 수
+                  있습니다.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="accodion_btn flex_sb">
+              <span>연식</span>
+            </div>
+            <div class="course-panel">
+              <div class="flex_sb">
+                <div>
+                  <p>최소 모델 연도</p>
+                  <select name="" id="">
+                    <option value="" disabled selected>아무거나</option>
+                    <option value="">2023(0)</option>
+                    <option value="">2022(8)</option>
+                    <option value="">2021(42)</option>
+                    <option value="">2020(72)</option>
+                    <option value="">2019(97)</option>
+                    <option value="">2018(111)</option>
+                    <option value="">2017(125)</option>
+                  </select>
+                </div>
+                <div>-</div>
+                <div>
+                  <p>최대 연식</p>
+                  <select name="" id="">
+                    <option value="" disabled selected>아무거나</option>
+                    <option value="">2023(127)</option>
+                    <option value="">2022(127)</option>
+                    <option value="">2021(119)</option>
+                    <option value="">2020(85)</option>
+                    <option value="">2019(80)</option>
+                    <option value="">2018(50)</option>
+                    <option value="">2017(30)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="accodion_btn flex_sb">
+              <span>차체</span>
+            </div>
+            <div class="course-panel">
+              <div>
+                <label for=""><input type="checkbox" />컨버터블 (29)</label>
+                <label for=""><input type="checkbox" />Coupe (47)</label>
+                <label for=""><input type="checkbox" />SUV (17)</label>
+                <label for=""><input type="checkbox" />Targa (1)</label>
+                <label for="" style="color: gray; text-decoration: line-through"
+                  ><input type="checkbox" disabled />Coupe (0)</label
+                >
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="accodion_btn flex_sb">
+              <span>색상</span>
+            </div>
+            <div class="course-panel">
+              <div>
+                <label for=""
+                  ><input type="checkbox" />
+                  <div class="color_black"></div>
+                  Black</label
+                >
+                <label for=""
+                  ><input type="checkbox" />
+                  <div class="color_silver"></div>
+                  Silver
+                </label>
+                <label for=""
+                  ><input type="checkbox" />
+                  <div class="color_gray"></div>
+                  Gray
+                </label>
+                <label for=""
+                  ><input type="checkbox" />
+                  <div class="color_red"></div>
+                  Red</label
+                >
+                <label for=""
+                  ><input type="checkbox" />
+                  <div class="color_blue"></div>
+                  Blue
+                </label>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="accodion_btn flex_sb">
+              <span>소유자 변경 횟수</span>
+            </div>
+            <div class="course-panel">
+              <div>
+                <span>최대 소유자 수</span>
+                <select name="" id="">
+                  <option value="" disabled selected>아무거나</option>
+                  <option value="">최대 1</option>
+                  <option value="">최대 2</option>
+                  <option value="">최대 3</option>
+                </select>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <article class="title">
+        <div>
+          <h1>포르쉐 인증 중고차</h1>
+          <div id="open_nav_con">
+            <i class="fa-solid fa-bars-progress"></i> 검색 개선
+          </div>
+        </div>
+      </article>
+
+      <article class="use_car">
+        <div>
+          <div class="use_box">
+            <div class="use_content">
+              <p>127 Porsche 이용 가능</p>
+              <div>
+                <div class="selbox">
+                  <small>조건</small>
+                  <p>Porsche Approved 중고</p>
+                  <span>x</span>
+                </div>
+                <div class="selbox">
+                  <small>조건</small>
+                  <p>중고</p>
+                  <span>x</span>
+                </div>
+              </div>
+              <div>
+                <a href="#" onclick="return false;">검색 저장하기</a>
+              </div>
+            </div>
+
+            <div class="used_content">
+              <section>
+                <div>
+                  <div class="left-section">
+                    <img
+                      src="./image/used_911_1.avif"
+                      alt=""
+                      id="image-container"
+                    />
+                  </div>
+
+                  <div class="right_selec">
+                    <img
+                      src="./image/used_911_1.avif"
+                      alt=""
+                      onclick="change_img(this)"
+                    />
+                    <img
+                      src="./image/used_911_2.avif"
+                      alt=""
+                      onclick="change_img(this)"
+                    />
+                    <img
+                      src="./image/used_911_4.avif"
+                      alt=""
+                      onclick="change_img(this)"
+                    />
+                  </div>
+                </div>
+                <div class="box_by_txt">
+                  <div>
+                    <div>
+                      <h5>2021 포르쉐 911 Carrera 4 Cabriolet(992)</h5>
+                      <small class="gray">중고차</small>
+                    </div>
+
+                    <div class="mark_up">
+                      <div>
+                        <i class="fa-regular fa-flag"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-flag"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <span
+                      >White · Leather (two-tone), Black and Mojave Beige</span
+                    >
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">10,500km</div>
+                    <div style="width: 50%">12월/2020년</div>
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">이전 소유자 0명</div>
+                    <div style="width: 50%">PDK(자동)</div>
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">288 kW / 392 마력</div>
+                    <div style="width: 50%">무사고</div>
+                  </div>
+                  <div style="border-bottom: 0px">
+                    <span>
+                      Porsche Centre Suwon Satellite Showroom · 441-804 Suwon
+                    </span>
+                    <h5>
+                      ₩204,000,000<small
+                        class="gray"
+                        style="display: inline; margin-left: 12px"
+                        >비면세 차량</small
+                      >
+                    </h5>
+                    <button class="white1_btn" onclick="return false;">
+                      > &nbsp;세부 정보 표시
+                    </button>
+                    <small class="gray">휘발유</small>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div>
+                  <div class="left-section">
+                    <img src="./image/used_718_1.avif" alt="" id="image_con" />
+                  </div>
+
+                  <div class="right_selec">
+                    <img
+                      src="./image/used_718_1.avif"
+                      alt=""
+                      onclick="change_img1(this)"
+                    />
+                    <img
+                      src="./image/used_718_2.avif"
+                      alt=""
+                      onclick="change_img1(this)"
+                    />
+                    <img
+                      src="./image/used_718_4.avif"
+                      alt=""
+                      onclick="change_img1(this)"
+                    />
+                  </div>
+                </div>
+                <div class="box_by_txt">
+                  <div>
+                    <div>
+                      <h5>2020 포르쉐 718 Boxter GTS(982)</h5>
+                      <small class="gray">중고차</small>
+                    </div>
+
+                    <div class="mark_up">
+                      <div>
+                        <i class="fa-regular fa-flag"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-flag"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <span
+                      >Carmine Red · Two-tone leather interior package in
+                      two-tone combination Black - Bordeaux Red</span
+                    >
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">8,700km</div>
+                    <div style="width: 50%">12월/2019년</div>
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">이전 소유자 0명</div>
+                    <div style="width: 50%">PDK(자동)</div>
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">269 kW / 365 마력</div>
+                    <div style="width: 50%">무사고</div>
+                  </div>
+                  <div style="border-bottom: 0px">
+                    <span>
+                      Porsche Centre Suwon Satellite Showroom · 441-804 Suwon
+                    </span>
+                    <h5>
+                      ₩123,000,000
+                      <small
+                        class="gray"
+                        style="display: inline; margin-left: 12px"
+                        >비면세 차량</small
+                      >
+                    </h5>
+                    <button class="white1_btn" onclick="return false;">
+                      > &nbsp;세부 정보 표시
+                    </button>
+                    <small class="gray">휘발유</small>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div>
+                  <div class="left-section">
+                    <img src="./image/used_tay_1.avif" alt="" id="image_con2" />
+                  </div>
+
+                  <div class="right_selec">
+                    <img
+                      src="./image/used_tay_1.avif"
+                      alt=""
+                      onclick="change_img2(this)"
+                    />
+                    <img
+                      src="./image/used_tay_2.avif"
+                      alt=""
+                      onclick="change_img2(this)"
+                    />
+                    <img
+                      src="./image/used_tay_4.avif"
+                      alt=""
+                      onclick="change_img2(this)"
+                    />
+                  </div>
+                </div>
+                <div class="box_by_txt">
+                  <div>
+                    <div>
+                      <h5>2021 포르쉐 Taycan Turbo S</h5>
+                      <small class="gray">중고차</small>
+                    </div>
+
+                    <div class="mark_up">
+                      <div>
+                        <i class="fa-regular fa-flag"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-flag"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <span
+                      >Ice Grey Metallic · Two-Tone Leather Interior,
+                      Smooth-Finish Leather, Black/Crayon</span
+                    >
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">8,809km</div>
+                    <div style="width: 50%">11월/2021년</div>
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">이전 소유자 1명</div>
+                    <div style="width: 50%">자동</div>
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">560 kW / 761 마력</div>
+                    <div style="width: 50%">무사고</div>
+                  </div>
+                  <div style="border-bottom: 0px">
+                    <span>
+                      Porsche Centre Suwon Satellite Showroom · 441-804 Suwon
+                    </span>
+                    <h5>
+                      ₩210,000,000<small
+                        class="gray"
+                        style="display: inline; margin-left: 12px"
+                        >비면세 차량</small
+                      >
+                    </h5>
+                    <button class="white1_btn" onclick="return false;">
+                      > &nbsp;세부 정보 표시
+                    </button>
+                    <small class="gray">전기 엔진</small>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div>
+                  <div class="left-section">
+                    <img
+                      src="./image/used_2021_1.avif"
+                      alt=""
+                      id="image_con3"
+                    />
+                  </div>
+
+                  <div class="right_selec">
+                    <img
+                      src="./image/used_2021_1.avif"
+                      alt=""
+                      onclick="change_img3(this)"
+                    />
+                    <img
+                      src="./image/used_2021_2.avif"
+                      alt=""
+                      onclick="change_img3(this)"
+                    />
+                    <img
+                      src="./image/used_2021_4.avif"
+                      alt=""
+                      onclick="change_img3(this)"
+                    />
+                  </div>
+                </div>
+                <div class="box_by_txt">
+                  <div>
+                    <div>
+                      <h5>2021 포르쉐 911 Carrera 4S Cabriolet(992)</h5>
+                      <small class="gray">중고차</small>
+                    </div>
+
+                    <div class="mark_up">
+                      <div>
+                        <i class="fa-regular fa-flag"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-flag"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <span
+                      >GT Silver Metallic · Leather (two-tone), Black and
+                      Bordeaux Red</span
+                    >
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">6,200km</div>
+                    <div style="width: 50%">04월/2021년</div>
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">이전 소유자 1명</div>
+                    <div style="width: 50%">PDK(자동)</div>
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">337 kW / 458 마력</div>
+                    <div style="width: 50%">무사고</div>
+                  </div>
+                  <div style="border-bottom: 0px">
+                    <span>
+                      Porsche Centre Suwon Satellite Showroom · 441-804 Suwon
+                    </span>
+                    <h5>
+                      ₩215,000,000<small
+                        class="gray"
+                        style="display: inline; margin-left: 12px"
+                        >비면세 차량</small
+                      >
+                    </h5>
+                    <button class="white1_btn" onclick="return false;">
+                      > &nbsp;세부 정보 표시
+                    </button>
+                    <small class="gray">휘발유</small>
+                  </div>
+                </div>
+              </section>
+              <section>
+                <div>
+                  <div class="left-section">
+                    <img
+                      src="./image/used_2020_1.avif"
+                      alt=""
+                      id="image_con4"
+                    />
+                  </div>
+
+                  <div class="right_selec">
+                    <img
+                      src="./image/used_2020_1.avif"
+                      alt=""
+                      onclick="change_img4(this)"
+                    />
+                    <img
+                      src="./image/used_2020_2.avif"
+                      alt=""
+                      onclick="change_img4(this)"
+                    />
+                    <img
+                      src="./image/used_2020_4.avif"
+                      alt=""
+                      onclick="change_img4(this)"
+                    />
+                  </div>
+                </div>
+                <div class="box_by_txt">
+                  <div>
+                    <div>
+                      <h5>2020 포르쉐 718 Boxster GTS(982)</h5>
+                      <small class="gray">중고차</small>
+                    </div>
+
+                    <div class="mark_up">
+                      <div>
+                        <i class="fa-regular fa-flag"></i>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-flag"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <span
+                      >Racing Yellow · Leather interior in special colour
+                      Bordeaux Red</span
+                    >
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">10,938km</div>
+                    <div style="width: 50%">12월/2019년</div>
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">이전 소유자 1명</div>
+                    <div style="width: 50%">PDK(자동)</div>
+                  </div>
+                  <div style="align-items: left; display: flex">
+                    <div style="width: 50%">269 kW / 365 마력</div>
+                    <div style="width: 50%">무사고</div>
+                  </div>
+                  <div style="border-bottom: 0px">
+                    <span>
+                      Porsche Centre Suwon Satellite Showroom · 441-804 Suwon
+                    </span>
+                    <h5>
+                      ₩115,000,000<small
+                        class="gray"
+                        style="display: inline; margin-left: 12px"
+                        >비면세 차량</small
+                      >
+                    </h5>
+                    <button class="white1_btn" onclick="return false;">
+                      > &nbsp;세부 정보 표시
+                    </button>
+                    <small class="gray">휘발유</small>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+
+          <div class="side_menu">
+            <ul>
+              <li>
+                <div class="accodion_btn flex_sb">
+                  <span>차량 유형</span>
+                </div>
+                <div class="course-panel">
+                  <div>
+                    <label for=""><input type="checkbox" />신규 (0)</label>
+                    <label for=""><input type="checkbox" />중고 (127)</label>
+                    <label for=""
+                      ><input type="checkbox" />Porsche Approved (0)</label
+                    >
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="accodion_btn flex_sb">
+                  <span>모델</span>
+                </div>
+                <div class="course-panel">
+                  <div>
+                    <select name="" id="">
+                      <option value="" disabled selected>모든 모델</option>
+                      <option value="">718</option>
+                      <option value="">911</option>
+                      <option value="">Taycan</option>
+                      <option value="">918</option>
+                      <option value="">Macan</option>
+                      <option value="">959</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="accodion_btn flex_sb">
+                  <span>모델 버전</span>
+                </div>
+                <div class="course-panel">
+                  <div>
+                    <p class="gray">
+                      911 Carrera S와 같은 모델 변형을 필터링할 수 있도록 먼저
+                      모델을 선택하십시오.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="accodion_btn flex_sb">
+                  <span>세대</span>
+                </div>
+                <div class="course-panel">
+                  <div>
+                    <p class="gray">
+                      모델을 먼저 선택하여 992와 같은 모델 생성을 필터링할 수
+                      있습니다.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="accodion_btn flex_sb">
+                  <span>연식</span>
+                </div>
+                <div class="course-panel">
+                  <div class="flex_sb">
+                    <div>
+                      <p>최소 모델 연도</p>
+                      <select name="" id="">
+                        <option value="" disabled selected>아무거나</option>
+                        <option value="">2023(0)</option>
+                        <option value="">2022(8)</option>
+                        <option value="">2021(42)</option>
+                        <option value="">2020(72)</option>
+                        <option value="">2019(97)</option>
+                        <option value="">2018(111)</option>
+                        <option value="">2017(125)</option>
+                      </select>
+                    </div>
+                    <div>-</div>
+                    <div>
+                      <p>최대 연식</p>
+                      <select name="" id="">
+                        <option value="" disabled selected>아무거나</option>
+                        <option value="">2023(127)</option>
+                        <option value="">2022(127)</option>
+                        <option value="">2021(119)</option>
+                        <option value="">2020(85)</option>
+                        <option value="">2019(80)</option>
+                        <option value="">2018(50)</option>
+                        <option value="">2017(30)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="accodion_btn flex_sb">
+                  <span>차체</span>
+                </div>
+                <div class="course-panel">
+                  <div>
+                    <label for=""><input type="checkbox" />컨버터블 (29)</label>
+                    <label for=""><input type="checkbox" />Coupe (47)</label>
+                    <label for=""><input type="checkbox" />SUV (17)</label>
+                    <label for=""><input type="checkbox" />Targa (1)</label>
+                    <label
+                      for=""
+                      style="color: gray; text-decoration: line-through"
+                      ><input type="checkbox" disabled />Coupe (0)</label
+                    >
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="accodion_btn flex_sb">
+                  <span>색상</span>
+                </div>
+                <div class="course-panel">
+                  <div>
+                    <label for=""
+                      ><input type="checkbox" />
+                      <div class="color_black"></div>
+                      Black</label
+                    >
+                    <label for=""
+                      ><input type="checkbox" />
+                      <div class="color_silver"></div>
+                      Silver
+                    </label>
+                    <label for=""
+                      ><input type="checkbox" />
+                      <div class="color_gray"></div>
+                      Gray
+                    </label>
+                    <label for=""
+                      ><input type="checkbox" />
+                      <div class="color_red"></div>
+                      Red</label
+                    >
+                    <label for=""
+                      ><input type="checkbox" />
+                      <div class="color_blue"></div>
+                      Blue
+                    </label>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="accodion_btn flex_sb">
+                  <span>소유자 변경 횟수</span>
+                </div>
+                <div class="course-panel">
+                  <div>
+                    <span>최대 소유자 수</span>
+                    <select name="" id="">
+                      <option value="" disabled selected>아무거나</option>
+                      <option value="">최대 1</option>
+                      <option value="">최대 2</option>
+                      <option value="">최대 3</option>
+                    </select>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <aside>
+        <div id="top_btn">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </aside>
+    </div>
+
+    <div w3-include-html="footer.html"></div>
+
+    <script src="store.js"></script>
+    <script src="basic.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+#loginwidth {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: auto;
+  z-index: 1;
+  background: white;
+  padding: 40px 24px 20px;
+}
+
+#loginwidth > div {
+  width: 100%;
+  max-width: 480px;
+  margin: 60px auto;
+}
+
+input {
+  font-family: "Noto Sans KR", sans-serif;
+  width: 100%;
+  height: 48px;
+  margin: 4px 0;
+  border: 1px solid #ccc;
+  padding: 0 24px;
+  border-radius: 6px;
+  font-weight: 400;
+}
+
+input:focus {
+  border: 1px solid black;
+  font-weight: 400;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  margin: 0 6 0 0;
+}
+
+input::placeholder {
+  color: #bbb;
+  font-size: 0.93rem;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+select {
+  width: 100%;
+  height: 48px;
+  appearance: none;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/9/9d/Arrow-down.svg")
+    90% no-repeat;
+  background-size: 18px 18px;
+}
+
+hr {
+  margin: 1.5rem 0;
+  background-color: #dddddd;
+}
+
+.login form img {
+  position: relative;
+  top: 3px;
+  width: 1.2rem;
+  margin: 0 8px;
+  height: auto;
+}
+
+form img {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 12px 0 24px;
+}
+
+form {
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 48px 24px 50px;
+  text-align: center;
+  width: 100%;
+  max-width: 480px;
+}
+
+form .white1_btn {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 48px;
+}
+
+/* start */
+
+form > h4 {
+  padding-bottom: 30px;
+}
+
+.login form > :nth-child(4) {
+  margin-bottom: 12px;
+}
+
+.login form > :nth-child(4) a:hover {
+  color: red;
+}
+
+.login form > :nth-child(4) span {
+  font-size: 0.7rem;
+}
+
+.login form > :nth-child(4) > :nth-child(2) {
+  position: relative;
+  top: 3px;
+  text-align: right;
+}
+.login form > :nth-child(4) {
+  flex-direction: column;
+  text-align: left;
+}
+
+.login form > p {
+  text-align: center;
+  padding: 6px;
+}
+
+/* id */
+
+.help_id > form > div {
+  width: 100%;
+  background: #eee;
+  padding: 16px;
+  border-radius: 6px;
+}
+
+.help_id > form > div > :first-child {
+  text-align: left;
+}
+
+.help_id > form > div > :first-child p {
+  line-height: 1rem;
+}
+.help_id > form > div > :first-child small {
+  position: relative;
+  top: -8px;
+}
+
+.help_id > form > div > div button {
+  color: white;
+  background: #6e81df;
+}
+.help_id > form > div > div button:hover,
+.help_pw > form button:hover {
+  background: #5a6ff2;
+}
+
+.help_id > form > div > div > small,
+.help_id > form > div > div > button {
+  margin-bottom: 0;
+}
+
+/* pw */
+
+.help_pw > form > div {
+  width: 100%;
+  background: #eee;
+  padding: 20px;
+  border-radius: 6px;
+  white-space: nowrap;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.help_pw > form > div input {
+  width: 90%;
+}
+
+.help_pw > form button {
+  width: 30%;
+  color: white;
+  background: #6e81df;
+}
+
+.help_pw,
+.help_id {
+  padding: 0 20px 20px;
+}
+
+@media screen and (min-width: 420px) {
+  .help_id > form > div > :first-child small {
+    position: relative;
+    top: 0px;
+  }
+}

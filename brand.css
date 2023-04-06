@@ -1,0 +1,361 @@
+.chanels p {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.brand {
+  background: url("./image/brand_main.jpg");
+  height: 600px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* 채널 */
+
+.chanels > div {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.chant {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0 60px;
+}
+
+.chant > :nth-child(1) {
+  width: 100%;
+}
+
+.chant > :nth-child(1) img {
+  width: 100%;
+}
+
+.chant > :nth-child(2) {
+  position: relative;
+  width: 100%;
+}
+
+.chant > :nth-child(2) > div {
+  position: relative;
+  margin: 12px 0;
+}
+
+.chant > :nth-child(2) > div h4 {
+  margin-bottom: 16px;
+}
+
+.chant p {
+  color: gray;
+}
+
+/* new */
+
+.new_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 40px 0 10px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.new_bg {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./image/brand_service_bg.jpg") space;
+  background-size: auto;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.new_box > :first-child {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.plus button {
+  position: absolute;
+  background: rgb(188, 207, 214);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  right: 16px;
+  bottom: -16px;
+  font-size: 1.5rem;
+  color: white;
+  z-index: 1;
+  border-radius: 50%;
+  border: none;
+}
+.plus button i {
+  transform-origin: center;
+  transition: 0.6s;
+}
+
+.plus button:hover i {
+  transform: rotate(360deg);
+}
+.new_boxs {
+  margin: 32px 0 40px;
+  padding: 0 0 20px;
+}
+
+.num_box {
+  display: inline-block;
+  position: relative;
+  line-height: 10px;
+  margin-right: 8px;
+  width: 42px;
+  height: 38px;
+  text-align: center;
+  background: gray;
+  padding-top: 20px;
+  color: white;
+}
+.new_boxs h5 {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.new_boxs p {
+  line-height: 1.2rem;
+  color: #666;
+}
+
+.num_box span {
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: orange;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.new_img_box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.new_img_box img {
+  width: 100%;
+}
+
+/* 히스토리 */
+
+.history {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 900px;
+  overflow: hidden;
+  margin: 120px auto 50px;
+  padding: 80px 40px 0 20px;
+}
+
+.history strong {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  font-size: 5rem;
+  color: white;
+  -webkit-text-stroke: 2px #eb3c1e;
+  z-index: -2;
+  text-transform: uppercase;
+}
+
+.history .his_wrap {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.history .his_wrap .his_inner {
+  width: 98vw;
+  float: left;
+  margin-top: 100px;
+}
+
+.history .his_wrap .his_inner img {
+  width: 95vw;
+  min-height: 350px;
+  max-height: 650px;
+}
+
+.history .yearlist {
+  position: relative;
+  display: flex;
+  height: 40px;
+}
+
+.history .yearlist .yearlist_bg {
+  background: #eff0f1;
+  width: 93%;
+  height: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.history .yearlist .yearlist_dots {
+  width: 91%;
+  position: absolute;
+  display: flex;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.history .yearlist .yearlist_dots a span {
+  padding: 10px;
+  line-height: 0;
+  background: #eb3c1e70;
+  border-radius: 30px;
+  color: #eb3c1e;
+}
+
+.history .yearlist .yearlist_dots a p {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.history .yearlist .yearlist_dots a:nth-child(1) {
+  position: absolute;
+  left: 3%;
+}
+
+.history .yearlist .yearlist_dots a:nth-child(2) {
+  position: absolute;
+  left: 22%;
+}
+
+.history .yearlist .yearlist_dots a:nth-child(3) {
+  position: absolute;
+  left: 54%;
+}
+
+.history .yearlist .yearlist_dots a:nth-child(4) {
+  position: absolute;
+  left: 73%;
+}
+
+.history .yearlist .yearlist_dots a:nth-child(5) {
+  position: absolute;
+  left: 92%;
+}
+@media screen and (min-width: 720px) {
+  .new {
+    padding: 0;
+  }
+
+  .new_box {
+    position: relative;
+    width: 100%;
+    height: 1500px;
+    padding: 20px 24px;
+    max-width: 1200px;
+  }
+
+  div.in_box {
+    width: 39%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #box1 {
+    position: absolute;
+    top: 0;
+    right: 14%;
+  }
+  #box2 {
+    top: 20%;
+    left: 24px;
+  }
+  #box3 {
+    right: 24px;
+    bottom: 20%;
+  }
+  #box4 {
+    bottom: 20px;
+    left: 13%;
+  }
+  .new_box > :first-child {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .brand {
+    height: 880px;
+  }
+  .history strong {
+    font-size: 16rem;
+    top: 22%;
+  }
+  .history .his_wrap .his_inner img {
+    object-fit: contain;
+  }
+  .new_box {
+    height: 1500px;
+  }
+
+  .chant:nth-of-type(2n + 1) {
+    margin: 0;
+    flex-direction: row;
+  }
+
+  .chant:nth-of-type(2n) {
+    flex-direction: row-reverse;
+    margin: 0;
+  }
+
+  .chant > :nth-child(2) {
+    position: relative;
+    width: 100%;
+  }
+
+  .chant:nth-of-type(2n + 1) > :nth-child(2) > div {
+    position: absolute;
+    margin: 0;
+    width: 80%;
+    left: 10%;
+    top: 30%;
+  }
+  .chant:nth-of-type(2n) > :nth-child(2) > div {
+    position: absolute;
+    margin: 0;
+    width: 80%;
+    right: 10%;
+    top: 30%;
+  }
+
+  .chant > :nth-child(2) > div h4 {
+    margin-bottom: 16px;
+  }
+
+  #box3 {
+    right: 0;
+    bottom: 20%;
+  }
+  #box4 {
+    bottom: 0;
+    left: 16%;
+  }
+}

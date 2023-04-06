@@ -1,0 +1,110 @@
+<!-- 회원가입 화면 -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kmk Final</title>
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="remove.css" />
+    <!-- AOS Download-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- fontawsome icons -->
+    <script
+      src="https://kit.fontawesome.com/b95978bb50.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body id="top">
+    <div w3-include-html="header.html"></div>
+    <article class="remove_account">
+      <h1>Remove Account</h1>
+      <div>
+        <form class="" action="index.html" method="post">
+          <h5>정말로 탈퇴하시겠습니까?</h5>
+          <p>
+            탈퇴 시 이용내역이 삭제되며<br />
+            서비스 이용이 제한됩니다.<br />또한 삭제된 계정은 복구되지 않습니다.
+          </p>
+          <button class="remove_btn" onclick="return false;">탈퇴하기</button>
+        </form>
+
+        <form class="" action="index.html" method="post">
+          <h4>설문조사</h4>
+          <p>
+            불편했던 점, 개선할 점을 공유해주시면<br />
+            더 나은 서비스를 위해 반영하도록 하겠습니다.
+          </p>
+
+          <p>탈퇴 사유</p>
+          <div class="selec" style="width: 100%">
+            <div class="choice">
+              <span class="chaTxt" id="re_count">선택해주세요.</span
+              ><i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="options">
+              <div id="rc1">기록을 삭제하기 위하여</div>
+              <div id="rc2">이용에 불편함과 장애가 많아서</div>
+              <div id="rc3">다른 사이트가 더 좋아서</div>
+              <div id="rc4">콘텐츠에 불만족</div>
+              <div id="rc5">원하는 기능이 없어서</div>
+              <div id="rc6">더 이상 필요가 없어져서</div>
+              <div id="rc7">사이트의 방향성이 가치관과 맞지 않아서</div>
+              <div id="rc8">기타</div>
+            </div>
+          </div>
+
+          <p>건의사항</p>
+          <textarea placeholder="소중한 의견 귀담아 듣겠습니다."></textarea>
+          <button onclick="return false;">제출하기</button>
+        </form>
+
+        <form class="" action="index.html" method="post">
+          <h4>탈퇴 완료</h4>
+          <img src="./image/remove_img.png" alt="" />
+          <p class="another">정상적으로 탈퇴 처리 되었습니다.</p>
+          <p>그동안 이용해주셔서 감사합니다.</p>
+          <button onclick="location.href='index.html'">홈으로</button>
+        </form>
+      </div>
+      <aside>
+        <div id="top_btn">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </aside>
+    </article>
+
+    <div w3-include-html="footer.html"></div>
+
+    <script src="basic.js"></script>
+    <script src="remove.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

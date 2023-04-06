@@ -1,0 +1,159 @@
+<!-- 회원가입 화면 -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kmk Final</title>
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="product.css" />
+    <!-- AOS Download-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- fontawsome icons -->
+    <script
+      src="https://kit.fontawesome.com/b95978bb50.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body id="top">
+    <div w3-include-html="header.html"></div>
+
+    <div>
+      <article class="store">
+        <h1>STORE</h1>
+
+        <div>
+          <div class="store_tab_box">
+            <div class="tabs checked">718</div>
+            <div class="tabs">911</div>
+            <div class="tabs">Taycan</div>
+          </div>
+
+          <div class="box_one">
+            <h3>구매하기</h3>
+            <div>
+              <h4 id="car_title">718 Cayman</h4>
+              <img src="./image/pro_718_1.jpg" alt="" id="car_image" />
+              <p>Color</p>
+              <div class="flex_start">
+                <div class="picker color_black check"></div>
+                <div class="picker color_navy"></div>
+                <div class="picker color_white"></div>
+                <div class="picker color_gray"></div>
+                <div class="picker color_sky"></div>
+                <div class="picker color_beige"></div>
+              </div>
+              <div>
+                <form>
+                  <div class="form-group">
+                    <label for="make">Make:</label>
+                    <input
+                      type="text"
+                      id="make"
+                      name="make"
+                      value="Porsche"
+                      readonly
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="model">Model:</label>
+                    <input
+                      type="text"
+                      id="model"
+                      name="model"
+                      readonly
+                      value="718 Cayman"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input
+                      type="text"
+                      id="price"
+                      name="price"
+                      readonly
+                      value="91,600,000 KRW"
+                    />
+                  </div>
+
+                  <div>
+                    <label for="">Seat:</label>
+                    <small>※1pick</small>
+                    <div class="seat">
+                      <div class="seat_box">Single <span></span></div>
+                      <div class="seat_box">Queen <span></span></div>
+                      <div class="seat_box">King <span></span></div>
+                      <div class="seat_box">xxLarge <span></span></div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="">Option:</label>
+                    <div class="ops">
+                      <div class="seat_box2">Sunroof <span></span></div>
+                      <div class="seat_box2">Manual <span></span></div>
+                      <div class="seat_box2">Warmer <span></span></div>
+                      <div class="seat_box2">Backup camera <span></span></div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <button type="submit" onclick="popup()">Buy Now</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div id="thank_pop">
+        <div>
+          <h1>Thank you</h1>
+          <button class="white_btn" onclick="location.href='index.html' ">
+            감사합니다.
+          </button>
+        </div>
+      </div>
+      <aside>
+        <div id="top_btn">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+      </aside>
+    </div>
+
+    <div w3-include-html="footer.html"></div>
+
+    <script src="basic.js"></script>
+    <script src="product.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

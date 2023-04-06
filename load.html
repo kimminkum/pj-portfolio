@@ -1,0 +1,127 @@
+<!-- 회원가입 화면 -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kmk Final</title>
+    <link rel="stylesheet" href="basic.css" />
+    <link rel="stylesheet" href="load.css" />
+    <!-- AOS Download-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- fontawsome icons -->
+    <script
+      src="https://kit.fontawesome.com/b95978bb50.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="http://code.jquery.com/jquery-latest.js"
+    ></script>
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body id="top">
+    <div w3-include-html="header.html"></div>
+
+    <article class="load">
+      <div>
+        <h1>매장 찾기</h1>
+        <p></p>
+
+        <div>
+          <input
+            type="text"
+            placeholder="매장 명이나 지역을 입력해주세요."
+            id="faq_tt"
+            onkeyup="faqkey()"
+          />
+          <div onclick="faqkey2()" style="cursor: pointer">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <ul>
+            <li>
+              <div>
+                <span class="map_num"></span>
+                <h5>포르쉐 센터 용산</h5>
+              </div>
+              <p>용산구 이촌로 12 04374</p>
+              <p>+82.2.6263.0911</p>
+            </li>
+            <li>
+              <div>
+                <span class="map_num"></span>
+                <h5>포르쉐 스튜디오 청담</h5>
+              </div>
+              <p>강남구 도산대로 420 청담스퀘어 G층 06062 서울특별시</p>
+              <p>+82.2.6191.0911</p>
+            </li>
+            <li>
+              <div>
+                <span class="map_num"></span>
+                <h5>포르쉐 센터 서초</h5>
+              </div>
+              <p>서처구 남부순환로 2215 06702</p>
+              <p>+82.2.440.0911</p>
+            </li>
+            <li>
+              <div>
+                <span class="map_num"></span>
+                <h5>포르쉐 센터 대치</h5>
+              </div>
+              <p>강남구 영남대로 401 06182</p>
+              <p>+82.2.2051.0911</p>
+            </li>
+            <li>
+              <div>
+                <span class="map_num"></span>
+                <h5>포르쉐 인증중고차 센터 양재</h5>
+              </div>
+              <p>서초구 양재대로11길 36 06772 서울특별시</p>
+              <p>02-6677-0911</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div id="map" style="width: 100%; min-height: 500px">
+            <script
+              type="text/javascript"
+              src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d0411399f1d75213eaec8091413b6e9c"
+            ></script>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div w3-include-html="footer.html"></div>
+
+    <script src="load.js"></script>
+    <script src="basic.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

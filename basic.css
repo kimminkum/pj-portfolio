@@ -1,0 +1,968 @@
+/* 폰트 */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* font-family: 'Roboto', sans-serif;
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+/* font-family: 'Rubik', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap");
+/* font-family: 'Dosis', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+/* font-family: 'Oswald', sans-serif; */
+
+/* 내 설정 (색)/(사이즈) */
+:root {
+  --size-normal: 16px;
+
+  --color-white: #fff;
+  --color-indigo: #555;
+
+  --color-gray: gray;
+  --color-lightblack: #222;
+  --color-search: #323744;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0px solid red;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-family: "Rubik", sans-serif;
+}
+
+p {
+  font-family: "Dosis", sans-serif;
+  color: inherit;
+}
+
+a,
+a:visited {
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 0%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  position: relative;
+  color: inherit;
+  transition: 0.4s;
+  background: linear-gradient(#fff 0 0) left / var(--p, 0%) no-repeat;
+  cursor: pointer;
+  border: 1px solid #111;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: 0.4s;
+}
+
+button:hover {
+  --p: 0%;
+}
+
+button:hover::after {
+  width: 100%;
+}
+
+/* pc mobile */
+
+div[class^="pc"] {
+  display: none;
+}
+div[class^="mobile"] {
+  display: inline-block;
+}
+img[class^="pc"] {
+  display: none;
+}
+img[class^="mobile"] {
+  display: inline-block;
+}
+p[class^="pc"] {
+  display: none;
+}
+
+/* class */
+
+.flex_start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex {
+  display: flex;
+}
+.flex_sb {
+  display: flex;
+  justify-content: space-between;
+}
+.flex_end {
+  display: flex;
+  justify-content: flex-end;
+}
+.flex_center {
+  display: flex;
+  justify-content: center;
+}
+
+/* form */
+
+form input[type="range"] {
+  -webkit-appearance: none; /* 기본 CSS 스타일을 적용하지 않기 위해서 */
+  width: 100%; /* 슬라이더 길이 */
+  height: 2px; /* 슬라이더 두께 */
+  border-radius: 5px; /* 슬라이더 모서리를 약간 둥글게 */
+  background: #000; /* 슬라이더 색상 */
+  outline: none; /* 슬라이더 테두리 없이 */
+  vertical-align: middle;
+}
+form input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* 기본 CSS 스타일을 적용하지 않기 위해서 */
+  appearance: none; /* 기본 CSS 스타일을 적용하지 않기 위해서 */
+  width: 25px; /* 슬라이더 핸들 길이 */
+  height: 25px; /* 슬라이더 핸들 높이 */
+  border-radius: 50%; /* 핸들 모양을 원모양으로 만들기 위함 */
+  background: #000; /* 슬라이더 핸들 색상 */
+  cursor: pointer; /* 슬라이더 핸들에 마우스를 갖다대면 포인터로 변경 */
+}
+
+input {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  border: none;
+  height: 48px;
+  line-height: 48px;
+  padding: 20px 24px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-weight: 900;
+  color: black;
+  border: 1px solid #111;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  margin: 0 6 0 0;
+}
+
+input:focus {
+  color: none;
+}
+
+form {
+  border: 1px solid #aaa;
+  border-radius: 12px;
+  padding: 30px;
+}
+
+form h3 {
+  margin-bottom: 16px;
+}
+form p {
+  margin-bottom: 16px;
+}
+
+form button {
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  background: #ddd;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 16px;
+  padding: 0 1.2rem;
+}
+
+form button:hover {
+  background: #333;
+  color: white;
+}
+
+form span {
+  margin-right: 8px;
+}
+form a:hover {
+  color: var(--color-disney);
+}
+form a::after {
+  border-bottom: 1px solid var(--color-disney);
+}
+form a:hover::after {
+  width: 100%;
+}
+
+/* 정리 섹션 */
+
+header {
+  width: 100%;
+}
+
+article {
+  padding: 50px 24px;
+  margin: 0;
+}
+
+article h1 {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-family: "Dosis", sans-serif;
+}
+
+.close_btn {
+  position: absolute;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.4s;
+  top: 35px;
+  right: 5%;
+  color: white;
+}
+
+.close_btn:hover {
+  font-size: 1.8rem;
+  transform-origin: center;
+  transform: rotate(360deg);
+}
+
+::placeholder {
+  color: #ddd;
+}
+
+#top {
+  overflow-y: scroll;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#top.act {
+  overflow: hidden;
+}
+
+#top::-webkit-scrollbar {
+  display: none;
+}
+
+.white_btn {
+  padding: 0.8rem 1.2rem;
+  margin-right: 16px;
+  margin-top: 20px;
+  background: white;
+  color: black;
+  font-weight: 600;
+  border: none;
+}
+.white1_btn {
+  padding: 0.8rem 1.2rem;
+  background: white;
+  color: black;
+  font-weight: 600;
+  width: 49%;
+  border: 1px solid #666;
+  margin-top: 30px;
+  white-space: nowrap;
+}
+
+aside {
+  position: fixed;
+  bottom: 50px;
+  z-index: 3;
+  right: 20px;
+  padding: 0 16px 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#top_btn {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background: orange;
+  margin-top: 10px;
+}
+
+.gray_btn {
+  padding: 0 0.8rem;
+  white-space: nowrap;
+  background: var(--color-indigo) linear-gradient(#111 0 0) left / var(--p, 0%)
+    no-repeat;
+  font-weight: 600;
+  border: none;
+  color: white;
+}
+
+.gray_btn:hover {
+  --p: 100%;
+}
+
+.black_btn {
+  padding: 0.8rem 1.2rem;
+  background: var(--color-lightblack);
+  color: white;
+  font-weight: 600;
+  width: 49%;
+  border: 1px solid #666;
+  margin-top: 30px;
+}
+
+.revers_btn {
+  border: 1px solid white;
+  font-weight: 600;
+  padding: 0.8rem 1.2rem;
+  color: white;
+}
+
+button[class^="tab"] {
+  padding: 0.8rem 1.2rem;
+  margin: 12px 8px 0 0;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #f4f4f4;
+  color: black;
+  border: none;
+}
+
+button[class^="tab"].check {
+  background: linear-gradient(90deg, #80e6e9 0, #0496de);
+  color: white;
+}
+
+.checked {
+  position: relative;
+}
+
+.checked::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: #111;
+  border-bottom: 2px solid #111;
+}
+
+.gray {
+  color: var(--color-gray);
+}
+
+.title {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.subt {
+  text-align: center;
+  color: gray;
+  margin-top: 12px;
+}
+
+.rankbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rank {
+  background: var(--color-lightblack);
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.85rem;
+  margin-left: 4px;
+  padding: 0.2rem 0.6rem 0.3rem;
+  border-radius: 30px;
+}
+
+.selec {
+  margin-top: 24px;
+  width: 100%;
+  position: relative;
+}
+
+.event .selec {
+  width: 49%;
+}
+
+.selec .choice {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem 0.2rem;
+  padding: 0.8rem 16px;
+  background: #eee;
+  z-index: 4;
+}
+
+.selec .choice span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+}
+.selec .options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 5;
+  border: 1px solid white;
+}
+.selec .options.act {
+  display: block;
+}
+
+.selec .options > div {
+  padding: 0.8rem 24px;
+  position: relative;
+  border-collapse: collapse;
+  cursor: pointer;
+  color: white;
+  background: #b9baff linear-gradient(#333 0 0) left / var(--p, 0%) no-repeat;
+  transition: 0.3s;
+  text-align: left;
+  z-index: 5;
+}
+.selec .options > div:hover {
+  --p: 100%;
+}
+
+/* accodian */
+.accodion_btn {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  padding: 10px 24px;
+  transition: 0.3s;
+  border-top: 1px solid #ddd;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.accodion_btn:hover {
+  background: black;
+  color: white;
+}
+
+.accodion_btn::after {
+  content: "\2304";
+  font-weight: bold;
+  float: right;
+  right: 24px;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-60%);
+  transition: 0.4s;
+}
+.accodion_btn.active::after {
+  content: "\2303";
+  top: 55%;
+}
+
+.course-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.course-panel ul li {
+  padding: 16px 32px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* sidebar */
+
+#side_bar > :first-child {
+  padding: 20px 24px;
+}
+
+.accordion .accodion_btn {
+  padding: 10px 24px;
+}
+
+#side_bar > :nth-child(2) {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+#side_bar > :nth-child(2) > :nth-child(1) {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 95px;
+}
+
+#side_bar > :nth-child(2) > :nth-child(1) > a {
+  width: 60%;
+  height: 100%;
+  margin: 0 24px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  background: var(--color-search);
+  color: white;
+  padding: 0.4rem 2.4rem;
+  border-radius: 20px;
+}
+
+#side_bar > :nth-child(2) > :nth-child(1) > a i {
+  margin-right: 16px;
+}
+#side_bar .accordion {
+  text-align: left;
+}
+
+#side_bar .accordion .course-panel ul li {
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+#side_bar .accordion .course-panel ul li span {
+  position: relative;
+}
+
+#side_bar .accordion .course-panel ul li span::after {
+  content: "click";
+  position: absolute;
+  top: -3px;
+  left: 120%;
+  height: 28px;
+  line-height: 28px;
+  width: 60px;
+  border-radius: 4px;
+  background: orange;
+  color: white;
+  text-align: center;
+}
+
+#side_bar .accordion > :nth-child(1) .course-panel ul li span::after {
+  content: "Home!";
+}
+
+#side_bar .accordion > :nth-child(2) .course-panel ul li span::after {
+  width: 80px;
+  content: "Shopping";
+  background: #0a6eff;
+}
+#side_bar .accordion > :nth-child(3) .course-panel ul li span::after {
+  content: "Join";
+  background: #4169e1;
+}
+#side_bar .accordion > :nth-child(4) .course-panel ul li span::after {
+  content: "QnA";
+  background: #1e96ff;
+}
+
+#side_bar .accordion .course-panel ul a:hover li {
+  background: #444;
+  color: white;
+}
+
+#side_bar .accordion .course-panel ul a:hover li span::after {
+  color: #222;
+}
+
+#side_bar > div > :nth-child(2) {
+  margin-top: 80px;
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+}
+
+#side_bar > div > div img {
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Join us */
+
+#search_hash {
+  background: url("./image/search_bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#side_bar {
+  background: url("./image/nav_bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+#search_hash,
+#side_bar {
+  position: absolute;
+  border-top: 1px solid #aaa;
+  width: 100%;
+  height: 100%;
+  max-height: auto;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: none;
+  transition: 0.4s;
+  opacity: 0;
+  padding: 20px 24px;
+}
+#search_hash.act,
+#side_bar.act {
+  display: block;
+}
+
+#side_bar > div {
+  width: 100%;
+  max-width: 480px;
+  margin: -20px auto;
+}
+
+#search_hash > div {
+  width: 100%;
+  max-width: 480px;
+  margin: 50px auto;
+}
+
+/* search */
+
+.search_window {
+  position: relative;
+  width: 100%;
+  top: 0px;
+  height: 48px;
+  margin: 0 24px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.search_window input {
+  position: relative;
+  top: 0;
+  left: 0%;
+  width: 80%;
+  height: 48px;
+  border-radius: 0;
+  border: none;
+  color: black;
+  border-bottom: 1px solid #aaa;
+}
+.search_window input:focus {
+  border: 0px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+.search_window button {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 8px 8px 0 8px;
+}
+
+.keyword {
+  position: relative;
+  color: #444;
+}
+
+.myword {
+  position: relative;
+  color: #444;
+  top: -20px;
+}
+
+.myword .wordtag {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.thisbox img {
+  width: 100%;
+}
+
+.keyword h4,
+.myword h4 {
+  margin-bottom: 16px;
+}
+
+.keyword > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hashtag {
+  padding: 0.3rem 0.6rem;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: #888;
+  background: #f7f7f8;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* header */
+header > :first-child {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  align-items: center;
+  padding: 0 5%;
+  height: 90px;
+  line-height: 90px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+header > :first-child .logo {
+  position: absolute;
+  width: 172px;
+  height: 112px;
+  left: 5%;
+  top: 0px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+header > :first-child .logo img {
+  width: 170px;
+  position: relative;
+  top: 8px;
+}
+
+header > :first-child > :last-child > div {
+  font-size: 1.3rem;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  margin: 40px 0 0;
+  padding: 30px 0 0;
+}
+
+footer .accodion_btn a {
+  padding: 0 6px;
+}
+
+footer div ul {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer > :nth-child(2) {
+  background: #333;
+  color: #aaa;
+  padding: 0 20px 80px;
+}
+
+footer .selec {
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+footer > :nth-child(2) > div > :nth-child(4) > * {
+  margin-top: 10px;
+}
+
+footer div ul li {
+  position: relative;
+}
+
+footer > :nth-child(2) > div {
+  padding: 30px 0 80px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer > :nth-child(2) > div > :first-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+footer .selec {
+  color: black;
+}
+
+@media screen and (min-width: 1366px) {
+  div[class^="pc"] {
+    display: inline-block;
+  }
+  div[class^="mobile"] {
+    display: none;
+  }
+  img[class^="pc"] {
+    display: inline-block;
+  }
+  img[class^="mobile"] {
+    display: none;
+  }
+  p[class^="pc"] {
+    display: block;
+  }
+  br[class^="mobile"] {
+    display: none;
+  }
+  article {
+    padding: 60px 0;
+    margin: 30px 0;
+  }
+  /* footer */
+  footer > div > ul {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer div ul li {
+    width: 100%;
+  }
+
+  footer div ul li a:hover {
+    color: orange;
+  }
+
+  footer .course-panel {
+    max-height: 100%;
+    overflow: hidden;
+  }
+
+  footer > :nth-child(2) > div {
+    padding: 30px 0px 80px;
+    display: flex;
+  }
+  footer > :nth-child(2) > div > :nth-child(2) {
+    border-left: 1px solid #ddd;
+    padding-left: 32px;
+  }
+
+  footer .accodion_btn::after {
+    content: "";
+  }
+  footer .accodion_btn.active::after {
+    content: "";
+  }
+  footer > :nth-child(2) > div > :first-child {
+    width: auto;
+    border-bottom: 0px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  #top {
+    scrollbar-width: auto;
+    overflow-y: scroll;
+  }
+
+  #top::-webkit-scrollbar {
+    display: block;
+    width: 12px;
+  }
+
+  #top::-webkit-scrollbar-thumb {
+    display: block;
+    background: gray;
+  }
+}

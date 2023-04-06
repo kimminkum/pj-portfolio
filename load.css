@@ -1,0 +1,121 @@
+article {
+  width: 100%;
+  height: 100%;
+  max-height: auto;
+  z-index: 1;
+  background: white;
+  text-align: center;
+  padding: 0;
+}
+article > div {
+  width: 100%;
+  max-width: 1200px;
+  padding: 90px 0 50px;
+  margin: 0 auto;
+}
+
+.load > :first-child {
+  background: #eee;
+}
+::placeholder {
+  color: black;
+}
+
+.load > :first-child > :nth-child(3) {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 30px auto;
+}
+.load > :first-child > :nth-child(3) input {
+  border: 0px;
+}
+.load > :first-child > :nth-child(3) i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  right: 24px;
+  font-size: 1.3rem;
+}
+
+.load > :nth-child(2) {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin: 120px 0;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.load > :nth-child(2) > :first-child ul {
+  margin: 40px 0;
+}
+
+.map_num {
+  position: relative;
+  margin-right: 24px;
+}
+
+.map_num::before {
+  content: "1";
+  position: absolute;
+  color: white;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: rgb(129, 129, 255);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.load > :nth-child(2) > :first-child ul > :nth-child(2) .map_num::before {
+  content: "2";
+}
+.load > :nth-child(2) > :first-child ul > :nth-child(3) .map_num::before {
+  content: "3";
+}
+.load > :nth-child(2) > :first-child ul > :nth-child(4) .map_num::before {
+  content: "4";
+}
+.load > :nth-child(2) > :first-child ul > :nth-child(5) .map_num::before {
+  content: "5";
+}
+
+.load > :nth-child(2) > :first-child ul li {
+  text-align: left;
+  padding: 20px 20px;
+  cursor: pointer;
+  border-top: 1px solid #eee;
+}
+.load > :nth-child(2) > :first-child ul > :last-child {
+  border-bottom: 1px solid #eee;
+}
+.load > :nth-child(2) > :first-child ul li div {
+  display: flex;
+}
+
+.load > :nth-child(2) > :nth-child(2) iframe {
+  width: 100%;
+  min-height: 500px;
+  height: auto;
+}
+
+@media screen and (min-width: 1366px) {
+  .load > :nth-child(2) {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 80px auto;
+  }
+  .load > :nth-child(2) > div {
+    width: 49%;
+  }
+
+  .load > :nth-child(2) > :first-child ul {
+    margin: 0;
+  }
+}

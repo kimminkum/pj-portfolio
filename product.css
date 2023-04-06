@@ -1,0 +1,323 @@
+article > div {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 480px;
+}
+
+.store_tab_box {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 30px;
+}
+
+form {
+  border: 0px;
+  padding: 20px 0;
+}
+
+.tabs {
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.tabs:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+.checked {
+  background: #ddd;
+}
+
+.box_one {
+  background: white;
+  padding: 20px 24px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.box_one > h3 {
+  text-align: center;
+}
+
+.box_one > div {
+  margin: 16px 0;
+}
+
+.box_one > div img {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.box_one > div > :nth-child(4) {
+  margin-bottom: 20px;
+  margin-top: 6px;
+}
+
+.picker {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.picker.check {
+  position: relative;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+.picker.check::after {
+  content: "✔";
+  position: absolute;
+  top: 0;
+  transform: translate(50%, -50%);
+  right: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: red;
+  text-align: center;
+  color: white;
+}
+
+.color_black {
+  background: black;
+}
+
+.color_navy {
+  background: navy;
+}
+
+.color_white {
+  background: white;
+  border: 1px solid #555;
+}
+
+.color_gray {
+  background: gray;
+}
+
+.color_sky {
+  background: skyblue;
+  display: none;
+}
+
+.color_beige {
+  background: beige;
+  display: none;
+}
+
+.picker:not(:last-child) {
+  margin-right: 16px;
+}
+
+form {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  line-height: 0;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #111;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 36px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+.dropdown-input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 8px 16px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  padding: 8px 0;
+  margin: 4px 0 0;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f4f4f4;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.seat,
+.ops {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin: 18px 0 32px;
+}
+
+.seat_box,
+.seat_box2 {
+  width: 100%;
+  height: 100px;
+  background: #eee;
+  color: black;
+  padding: 20px 24px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.4s;
+  text-transform: uppercase;
+}
+
+.seat_box.act {
+  border: 6px solid #888;
+}
+
+.seat_box2.act {
+  border: 6px solid #888;
+}
+
+.seat_box > span,
+.seat_box2 > span {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+}
+
+.seat_box.act > span::after,
+.seat_box2.act > span::after {
+  position: absolute;
+  content: "✔";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #4caf50;
+}
+
+#thank_pop {
+  position: relative;
+  width: 95%;
+  box-shadow: 3px 6px 12px #aaa;
+  height: 300px;
+  margin: 0 auto;
+  max-width: 1200px;
+  background: url("./image/pro_bg.webp");
+  color: white;
+  background-size: cover;
+  background-position: 50%;
+  text-align: center;
+}
+#thank_pop > div h1 {
+  line-height: 200px;
+}
+
+@media screen and (min-width: 1366px) {
+  .store > h1 {
+    margin-bottom: 80px;
+  }
+  .store > div {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+  }
+
+  .store_tab_box {
+    flex-direction: column;
+    width: 320px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    height: 100%;
+    max-height: auto;
+  }
+
+  .box_one {
+    width: 800px;
+  }
+
+  .tabs {
+    margin-bottom: 4px;
+  }
+
+  .tabs:not(:last-child) {
+    border-right: 0px solid #ddd;
+  }
+}

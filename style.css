@@ -1,0 +1,641 @@
+/* main */
+main {
+  width: 100%;
+}
+
+main .swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  overflow-y: hidden;
+}
+
+main .swiper-container .swiper-slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+main .swiper-container .swiper-slide .swipe_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 580px;
+  max-height: 100vh;
+}
+
+main .swiper-container .swiper-slide .swipe_box {
+  position: absolute;
+  color: white;
+  bottom: 5%;
+  left: 6%;
+  text-align: left;
+  transform: translate(0, -30%);
+}
+
+main .swiper-container .swiper-slide .swipe_box button {
+  width: 140px;
+}
+
+main .swiper-container .swiper-slide .swipe_box h1 {
+  text-align: left;
+}
+
+main .swiper-pagination {
+  position: absolute;
+  bottom: 50px;
+  z-index: 1;
+}
+
+main .swiper-pagination-bullet {
+  opacity: 0.6;
+  width: 16px;
+  height: 8px;
+  border-radius: 16px;
+  background: white;
+  transition: 0.4s;
+}
+
+main .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 1;
+  width: 32px;
+  border-radius: 30px;
+  background: orange;
+}
+
+main .swiper-button-next,
+main .swiper-button-prev {
+  background: #fff;
+  opacity: 0.85;
+  border-radius: 0px;
+  top: 40%;
+  width: 42px;
+  color: black;
+  z-index: 1;
+}
+main .swiper-button-next::after,
+main .swiper-button-prev::after {
+  font-size: 1.3rem;
+  font-weight: 900;
+  z-index: 1;
+}
+
+/* best */
+
+.best {
+  position: relative;
+  overflow-x: hidden;
+  margin-top: 100px;
+}
+
+.best > :nth-child(2) {
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 40px;
+}
+
+.best > :nth-child(2) > div {
+  padding: 10px 8px;
+  cursor: pointer;
+}
+
+.best .swiper-container section {
+  border: 1px solid #ccc;
+  padding: 40px 30px;
+  border-radius: 4px;
+}
+
+.best section .best_img img {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.best section > :nth-child(3) .flex_sb:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+
+.best section > :nth-child(3) .flex_end {
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  padding: 20px 0 0;
+}
+
+.best .swiper-pagination {
+  position: absolute;
+}
+
+.best .gray {
+  text-align: right;
+}
+
+.three,
+.four,
+.five,
+#moha,
+#ssona,
+#spo {
+  display: none;
+}
+
+.model > div {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 6px 8px;
+}
+
+.model section {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.model section .mod_img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.model section .mod_img img {
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.75);
+  transition: 0.4s;
+  max-height: 380px;
+}
+
+.model section:hover .mod_img img {
+  filter: brightness(0.85);
+  transform: scale(1.1);
+}
+
+.model section .mod_box {
+  position: absolute;
+  bottom: 32px;
+  left: 24px;
+  color: white;
+  font-size: 1.2rem;
+}
+.model section .mod_box h3 {
+  margin-bottom: 8px;
+}
+.model .mod_box .mobile p {
+  margin-bottom: 8px;
+}
+.model .nums2 {
+  font-size: 1rem;
+}
+.model .mod_box .mobile > span:nth-of-type(2) {
+  font-size: 1rem;
+}
+
+/* used */
+
+.used > div {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 0 60px;
+}
+
+section.swiper-slide.card {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background: white;
+  padding: 20px;
+  z-index: 1;
+  border: 1px solid #ddd;
+  transform: scale(0.85);
+}
+
+.center {
+  position: relative;
+}
+
+.used .center .swiper-pagination {
+  position: absolute;
+}
+
+.slide_list > section.swiper-slide-active {
+  transform: scale(1.1);
+  border-radius: 4px;
+  box-shadow: 4px 8px 12px #ccc;
+  border: 1px solid #aaa;
+  z-index: 2;
+}
+
+.card > :nth-child(1) {
+  left: 0%;
+  width: 45%;
+  position: relative;
+}
+
+.top-section {
+  width: 100%;
+}
+
+.top-section img {
+  width: 100%;
+}
+
+.used_selec {
+  top: 0;
+  left: 0%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.used_selec img {
+  width: 23%;
+  border: 3px solid #aaa;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.used_selec img:hover {
+  border: 3px solid #ff1493;
+}
+
+.used_box {
+  position: absolute;
+  right: 20px;
+  height: 100%;
+  top: 55%;
+  transform: translateY(-50%);
+  font-size: 0.82;
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.used_box > h5 {
+  margin: 8px 0;
+}
+
+.used_box button {
+  position: absolute;
+  bottom: 24px;
+}
+
+.black_btn:hover {
+  color: rgb(252, 252, 25);
+}
+
+.used_box .black_btn {
+  width: 100%;
+  margin: 0;
+  padding: 0.6rem 0;
+}
+
+.used_box .black_btn {
+  background: rgb(53, 53, 235) linear-gradient(#1b096d 0 0) left / var(--p, 0%)
+    no-repeat;
+}
+.used_box .black_btn:hover {
+  --p: 100%;
+}
+
+.used_box > div p {
+  line-height: 1.8rem;
+}
+
+.used_box p,
+.used_box h5 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* event */
+.event > div {
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leftSection,
+.rightSection {
+  border: 1px solid #ccc;
+  padding: 6% 5% 36px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.leftSection form,
+.rightSection form {
+  padding: 0;
+  border: none;
+}
+
+.leftSection form > :first-child,
+.rightSection form > :first-child {
+  margin-bottom: 50px;
+}
+
+.leftSection form h4,
+.rightSection form h4 {
+  margin-bottom: 16px;
+}
+.leftSection form > :first-child p,
+.rightSection form > :first-child p {
+  color: var(--color-gray);
+}
+.range_box > div {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  margin-top: 20px;
+}
+.range_money input[type="range"],
+.range_month input[type="range"] {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  line-height: 0px;
+  padding: 3px;
+  cursor: pointer;
+  border: none;
+  bottom: 0px;
+  background: linear-gradient(
+    to right,
+    #ffe283 0%,
+    #ffe283 100%,
+    #ececec 50%,
+    #ececec 100%
+  );
+  border-radius: 4px;
+  transition: background 450ms ease-in;
+  accent-color: #ffca1d;
+}
+.range_money input[type="range"]::-webkit-slider-thumb,
+.range_month input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #ffffff;
+  cursor: pointer;
+  border: 1px solid #000000;
+  height: 20px;
+  width: 16px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border-radius: 4px;
+}
+.range_money > :nth-child(3),
+.range_month > :nth-child(3) {
+  position: absolute;
+  right: 0;
+}
+.rightSection {
+  background-image: url("https://files.porsche.com/filestore/image/multimedia/none/modelseries-macan-pa-backplate/normal/f2242816-9100-11ea-80c9-005056bbdc38;sK;twebp/porsche-normal.webp");
+  background-repeat: no-repeat;
+  background-size: 920px;
+  background-position: center -150px;
+  background-color: #000;
+  color: #fff;
+}
+.rightSection .modelArea h3 {
+  margin-bottom: 40px;
+}
+.rightSection .modelArea .imgBox {
+  margin-bottom: 40px;
+}
+.rightSection .modelArea .imgBox img {
+  width: 100%;
+}
+.rightSection .modelArea .textBox {
+  padding-bottom: 0;
+  font-size: 1.1rem;
+}
+.rightSection .modelArea .textBox > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.rightSection .modelArea .textBox div.price {
+  justify-content: right;
+}
+.rightSection .modelArea button {
+  border-color: #fff;
+  color: #fff;
+}
+.rightSection .modelArea button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.rightSection .modelArea .textBox > div.buttonArea {
+  border-top: 1px solid #aaa;
+  padding-top: 40px;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.rightSection .modelArea .buttonArea button {
+  width: calc((100% - 40px) / 2);
+  min-width: 142px;
+  margin: 0 auto 20px;
+}
+.range_read {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 16px;
+  line-height: 50px;
+  width: 40%;
+}
+.range_read input,
+.range_seb input {
+  position: relative;
+  width: 80%;
+  height: 30px;
+  top: 10px;
+  border: none;
+  text-align: right;
+  padding: 0 16px;
+  background: #eee;
+}
+.range_seb {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 16px;
+  line-height: 50px;
+  width: 40%;
+}
+.fileplus {
+  position: relative;
+  cursor: pointer;
+  width: 48%;
+  border: 1px dotted #aaa;
+  background: #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
+.fileplus i {
+  font-size: 2rem;
+  transform: rotate(45deg);
+}
+.fileplus > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.rightSection form > :nth-child(2) > :first-child {
+  width: 48%;
+  height: 100%;
+}
+.rightSection form > :nth-child(2) > :first-child h5 {
+  margin-bottom: 12px;
+}
+.rightSection form > :nth-child(2) > :first-child h5:nth-of-type(2n) {
+  margin-bottom: 24px;
+}
+.event > :nth-child(2) {
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 40px;
+  flex-direction: row;
+}
+.event > :nth-child(2) > div {
+  padding: 10px 8px;
+  cursor: pointer;
+}
+/* news */
+.news {
+  padding: 0;
+  position: relative;
+  margin-bottom: 100px;
+}
+.news .news_img img {
+  width: 100%;
+  min-height: 400px;
+  filter: brightness(0.82);
+  max-height: 85vh;
+}
+.news .news_box {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+}
+.news .news_box > * {
+  margin-top: 16px;
+}
+.news .news_box button:hover {
+  background: white;
+  color: black;
+}
+.tools > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.tools .tool_img img {
+  width: 100%;
+  transition: 0.5s;
+}
+.tools > div > div {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.tools > div > div:hover img {
+  transform: scale(1.1);
+}
+.tools .tool_box {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  left: 16px;
+  color: white;
+  transition: 0.4s;
+}
+.tools .tool_box h5 {
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  section.swiper-slide.card {
+    padding: 32px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  article {
+    padding: 60px 0;
+    margin: 30px 0;
+  }
+  .rankbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .best {
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 30px;
+  }
+  .second,
+  .three,
+  .four,
+  .five {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .model > div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .best .swiper-container section {
+    padding: 40px 5%;
+  }
+  .model section .mod_box {
+    position: absolute;
+    left: 50px;
+    top: 15%;
+    color: white;
+    font-size: 1.2rem;
+  }
+  .used_box {
+    width: 46%;
+  }
+
+  .event > .flex_sb {
+    flex-direction: row;
+  }
+  .leftSection,
+  .rightSection {
+    width: 49%;
+  }
+  .tools > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .used_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    width: 49%;
+  }
+  .used_box h5 {
+    margin-bottom: 20px;
+  }
+  .used_box > div p {
+    margin-bottom: 8px;
+  }
+
+  .used_box button {
+    bottom: 50px;
+  }
+
+  .used_box h5 {
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+  }
+}

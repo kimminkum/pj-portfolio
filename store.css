@@ -1,0 +1,358 @@
+input[type="checkbox"] {
+  margin-right: 12px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+}
+option:focus {
+  padding: 10px;
+}
+
+.nav_side_menu .accodion_btn,
+.side_menu .accodion_btn {
+  position: relative;
+  padding: 12px 20px;
+  border-top: 0px;
+}
+.nav_side_menu .accodion_btn::after,
+.side_menu .accodion_btn::after {
+  content: "+";
+  font-weight: bold;
+  float: right;
+  right: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.4s;
+}
+.nav_side_menu .accodion_btn.active::after,
+.side_menu .accodion_btn.active::after {
+  content: "-";
+}
+
+.title {
+  margin: 80px 0 0;
+  padding: 0;
+}
+
+.title > div {
+  background: white;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title > div > div {
+  border: 1px solid #ddd;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+div[class^="color"] {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.color_black {
+  background: #111;
+}
+.color_silver {
+  background: silver;
+}
+.color_gray {
+  background: gray;
+}
+.color_red {
+  background: red;
+}
+.color_blue {
+  background: blue;
+}
+
+.side_menu {
+  display: none;
+}
+
+.nav_side_menu {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  max-height: auto;
+  top: 0;
+  left: -100%;
+  background: white;
+  overflow: scroll;
+  z-index: 8;
+  transition: 0.4s;
+}
+
+.nav_side_menu ul > li:nth-child(5) > :nth-child(2) > div,
+.side_menu ul > li:nth-child(5) > :nth-child(2) > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.nav_side_menu ul > li:nth-child(5) > :nth-child(2) > div > :nth-child(2),
+.side_menu ul > li:nth-child(5) > :nth-child(2) > div > :nth-child(2) {
+  position: relative;
+  top: 30px;
+}
+
+.nav_side_menu.act {
+  left: 0;
+}
+
+.use_car {
+  background: #eee;
+}
+
+.use_car > div {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav_side_menu ul {
+  margin: 120px 0;
+  border-top: 1px solid #ddd;
+}
+.nav_side_menu ul li {
+  border-bottom: 1px solid #eee;
+}
+
+.course-panel > div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.course-panel > div > * {
+  margin-bottom: 6px;
+}
+
+.use_box > :first-child {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.used_content section {
+  background: white;
+}
+
+.used_content section > :nth-child(2) {
+  padding: 0 20px;
+}
+
+.use_content > :nth-child(2) {
+  display: flex;
+}
+
+.selbox {
+  background: #eee;
+  position: relative;
+  padding: 10px 30px 10px 10px;
+  margin: 20px 20px 20px 0;
+}
+
+.selbox > p {
+  margin-top: 6px;
+}
+
+.selbox > span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.use_content a:hover {
+  color: crimson;
+}
+
+.used_content section {
+  margin-bottom: 30px;
+}
+
+.used_content section > :first-child {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.used_content section > :first-child > :first-child {
+  width: 80%;
+  height: 100%;
+}
+.used_content section > :first-child > :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 26.65%;
+}
+.used_content section > :first-child > :nth-child(2) img {
+  cursor: pointer;
+}
+
+.used_content section > div img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.used_content section > .box_by_txt {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.used_content section > .box_by_txt > :first-child {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.used_content section > .box_by_txt > div {
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.used_content section > .box_by_txt > :first-child > :first-child {
+  width: 85%;
+}
+.used_content section > .box_by_txt > :first-child > :nth-child(2) {
+  position: relative;
+  width: 15%;
+  text-align: center;
+}
+.used_content section > .box_by_txt > :first-child > :nth-child(2) > div {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px solid #222;
+  cursor: pointer;
+}
+
+.mark_up > :nth-child(1) {
+  display: block;
+}
+
+.mark_up > :nth-child(2) {
+  display: none;
+}
+
+.mark_up.act > :nth-child(1) {
+  display: none;
+}
+
+.mark_up.act > :nth-child(2) {
+  display: block;
+}
+
+.box_by_txt > :last-child > h5 {
+  padding-top: 12px;
+}
+
+.box_by_txt > :last-child button {
+  margin: 12px 0;
+}
+
+.box_by_txt > :last-child small {
+  display: block;
+}
+
+@media screen and (min-width: 1366px) {
+  .side_menu {
+    display: block;
+    position: sticky;
+    width: 280px;
+    background: white;
+    margin-top: 20px;
+    height: 100%;
+    max-height: auto;
+  }
+
+  .nav_side_menu {
+    display: none;
+  }
+
+  .title > div > div {
+    display: none;
+  }
+
+  .use_car > div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .use_car > div > :first-child {
+    width: 900px;
+  }
+
+  .used_content section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .used_content section > :first-child {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .used_content section > :first-child > :first-child {
+    margin-bottom: 16px;
+  }
+
+  .used_content section > :nth-child(1) {
+    width: 52%;
+  }
+  .used_content section > .box_by_txt {
+    width: 45%;
+  }
+  .used_content section > :first-child > :nth-child(2) img {
+    cursor: pointer;
+  }
+  .used_content section > :first-child > :first-child {
+    width: 100%;
+    height: 100%;
+  }
+  .used_content section > :first-child > :nth-child(2) {
+    flex-direction: row;
+    width: 33.3%;
+    flex-wrap: nowrap;
+  }
+
+  .used_content section > div img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .used_content section > .box_by_txt > :first-child {
+    padding: 0 0 20px;
+  }
+
+  .used_content section > :nth-child(2) {
+    padding: 20px 0;
+  }
+}
