@@ -5,6 +5,10 @@
 /* font-family: 'Roboto', sans-serif;
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/* font-family: 'Oswald', sans-serif;
+ */
+
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
 /* font-family: 'Rubik', sans-serif; */
 
@@ -267,6 +271,7 @@ h1 {
   line-height: 2.9rem;
   text-align: center;
   text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
 }
 h2 {
   font-size: 2rem;

@@ -260,24 +260,24 @@ section.swiper-slide.card {
 
 .used_box {
   position: absolute;
-  right: 20px;
+  right: 34px;
   height: 100%;
   top: 55%;
   transform: translateY(-50%);
   font-size: 0.82;
-  width: 44%;
+  width: 41%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
 .used_box > h5 {
-  margin: 8px 0;
+  margin: 16px 0 8px;
 }
 
 .used_box button {
   position: absolute;
-  bottom: 24px;
+  bottom: 32px;
 }
 
 .black_btn:hover {
@@ -556,10 +556,12 @@ section.swiper-slide.card {
 .tools .tool_box h5 {
   width: 90%;
 }
-
 @media screen and (min-width: 768px) {
   section.swiper-slide.card {
     padding: 32px;
+  }
+  .used_box button {
+    bottom: 15%;
   }
 }
 @media screen and (min-width: 1366px) {
@@ -599,10 +601,6 @@ section.swiper-slide.card {
     color: white;
     font-size: 1.2rem;
   }
-  .used_box {
-    width: 46%;
-  }
-
   .event > .flex_sb {
     flex-direction: row;
   }
@@ -621,7 +619,7 @@ section.swiper-slide.card {
     justify-content: flex-start;
     font-size: 1.2rem;
     line-height: 1.3rem;
-    width: 49%;
+    width: 45%;
   }
   .used_box h5 {
     margin-bottom: 20px;
@@ -629,11 +627,9 @@ section.swiper-slide.card {
   .used_box > div p {
     margin-bottom: 8px;
   }
-
   .used_box button {
     bottom: 50px;
   }
-
   .used_box h5 {
     font-size: 1.5rem;
     line-height: 1.6rem;
