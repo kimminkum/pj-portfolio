@@ -16,6 +16,11 @@ option:focus {
   padding: 12px 20px;
   border-top: 0px;
 }
+
+.close_btn {
+  color: black;
+}
+
 .nav_side_menu .accodion_btn::after,
 .side_menu .accodion_btn::after {
   content: "+";
