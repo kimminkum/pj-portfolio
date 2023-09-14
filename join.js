@@ -46,7 +46,7 @@ $(document).ready(function() {
   });
 });
 
-//birth
+//birthw
 $(function() {
   var now = new Date();
   var year = now.getFullYear();
