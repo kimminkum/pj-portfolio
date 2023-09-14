@@ -22,6 +22,10 @@ article > :nth-child(2) > h3 {
   margin-bottom: 20px;
 }
 
+.flex_v {
+  flex-direction: column;
+}
+
 article form h4 {
   margin-bottom: 24px;
 }
