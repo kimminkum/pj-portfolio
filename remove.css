@@ -35,6 +35,14 @@ article form {
   margin: 60px 0;
 }
 
+.choice {
+  border: 1px solid #aaa;
+}
+
+.choice > span {
+  text-align: left;
+}
+
 .remove_account form:nth-of-type(2) p:nth-of-type(1) {
   text-align: center;
 }

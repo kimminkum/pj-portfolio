@@ -9,21 +9,21 @@ $sportAll.change(function() {
 var boxes = $('input[name="sports"]');
 boxes.change(function() {
   // 첫 번째 방법
-  /* var selectAll = true;
-          var count = boxes.length;
-          var i = 0;
-          for (; i < count; i++) {
-            if (!boxes[i].checked) {
-              selectAll = false;
-              break;
-            }
-          } */
+  var selectAll = true;
+  var count = boxes.length;
+  var i = 0;
+  for (; i < count; i++) {
+    if (!boxes[i].checked) {
+      selectAll = false;
+      break;
+    }
+  }
   // 두 번째 방법
-  var boxLength = boxes.length;
+  // var boxLength = boxes.length;
   // 체크된 체크박스 갯수를 확인하기 위해 :checked 필터를 사용하여 체크박스만 선택한 후 length 프로퍼티를 확인
-  var checkedLength = $('input[name="sports"]:checked').length;
-  var selectAll = boxLength == checkedLength;
-  $sportAll.prop("checked", selectAll);
+  // var checkedLength = $('input[name="sports"]:checked').length;
+  // var selectAll = boxLength == checkedLength;
+  // $sportAll.prop("checked", selectAll);
 });
 
 // top button
